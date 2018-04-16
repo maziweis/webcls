@@ -1,0 +1,3196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\SmarterClassroom项目发布</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Theme/css/audio.css">
+      <publishTime>04/06/2017 19:46:54</publishTime>
+    </File>
+    <File Include="App_Theme/css/base.css">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/css/beike.css">
+      <publishTime>04/11/2017 17:32:11</publishTime>
+    </File>
+    <File Include="App_Theme/css/dialog_skin.css">
+      <publishTime>03/16/2017 09:56:25</publishTime>
+    </File>
+    <File Include="App_Theme/css/idangerous.swiper.css">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/css/page.css">
+      <publishTime>04/12/2017 11:48:34</publishTime>
+    </File>
+    <File Include="App_Theme/css/simple.css">
+      <publishTime>04/06/2017 20:49:13</publishTime>
+    </File>
+    <File Include="App_Theme/css/solid.css">
+      <publishTime>03/30/2017 14:10:57</publishTime>
+    </File>
+    <File Include="App_Theme/css/vssver2.scc">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/dialog/artDialog.js">
+      <publishTime>04/07/2017 16:11:44</publishTime>
+    </File>
+    <File Include="App_Theme/dialog/dialog-min.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/dialog/dialog-plus-min.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/dialog/dialog-plus.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/dialog/dialog.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/dialog/require.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/dialog/vssver2.scc">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/01.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/02.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/03.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/1.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/11.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/12.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/13.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/2.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/3.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/addBook.png">
+      <publishTime>02/06/2017 13:52:48</publishTime>
+    </File>
+    <File Include="App_Theme/images/audiobg.gif">
+      <publishTime>03/16/2017 16:04:06</publishTime>
+    </File>
+    <File Include="App_Theme/images/audioClose.png">
+      <publishTime>03/16/2017 16:04:06</publishTime>
+    </File>
+    <File Include="App_Theme/images/back.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/bar.gif">
+      <publishTime>03/16/2017 16:04:06</publishTime>
+    </File>
+    <File Include="App_Theme/images/bg.gif">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/book01.jpg">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/borderRadius.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/borderRadiusBottom.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/boxshadow.png">
+      <publishTime>02/06/2017 13:52:49</publishTime>
+    </File>
+    <File Include="App_Theme/images/btnBack.gif">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/btnIco.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/btnNext.gif">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/btnNext.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/btnPrev.gif">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/btnPrev.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/Btn_ico.png">
+      <publishTime>03/14/2017 17:54:14</publishTime>
+    </File>
+    <File Include="App_Theme/images/btx_bg.png">
+      <publishTime>04/10/2017 15:52:12</publishTime>
+    </File>
+    <File Include="App_Theme/images/CLKJ.gif">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/CLKJ_HOVER.png">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/cloceA_bg.png">
+      <publishTime>04/10/2017 16:00:42</publishTime>
+    </File>
+    <File Include="App_Theme/images/close-20.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/close-demo.gif">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/close.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/coming.png">
+      <publishTime>02/16/2017 17:57:49</publishTime>
+    </File>
+    <File Include="App_Theme/images/commend.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/cover1.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/cover2.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/defaultHead.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/delete.png">
+      <publishTime>03/10/2017 17:00:30</publishTime>
+    </File>
+    <File Include="App_Theme/images/DH.gif">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/DH_hover.png">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/dialog/bc.png">
+      <publishTime>03/15/2017 09:42:56</publishTime>
+    </File>
+    <File Include="App_Theme/images/dialog/be.png">
+      <publishTime>03/15/2017 09:42:56</publishTime>
+    </File>
+    <File Include="App_Theme/images/dialog/bw.png">
+      <publishTime>03/15/2017 09:42:56</publishTime>
+    </File>
+    <File Include="App_Theme/images/dialog/ce.png">
+      <publishTime>03/15/2017 09:42:56</publishTime>
+    </File>
+    <File Include="App_Theme/images/dialog/close.png">
+      <publishTime>03/20/2017 14:34:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/dialog/cw.png">
+      <publishTime>03/15/2017 09:42:56</publishTime>
+    </File>
+    <File Include="App_Theme/images/dialog/e.png">
+      <publishTime>03/15/2017 09:42:56</publishTime>
+    </File>
+    <File Include="App_Theme/images/dialog/loading.gif">
+      <publishTime>04/06/2017 20:49:17</publishTime>
+    </File>
+    <File Include="App_Theme/images/dialog/max.png">
+      <publishTime>03/20/2017 14:34:19</publishTime>
+    </File>
+    <File Include="App_Theme/images/dialog/min.png">
+      <publishTime>03/20/2017 14:34:27</publishTime>
+    </File>
+    <File Include="App_Theme/images/dialog/n.png">
+      <publishTime>03/15/2017 09:42:56</publishTime>
+    </File>
+    <File Include="App_Theme/images/dialog/nc.png">
+      <publishTime>03/20/2017 10:45:22</publishTime>
+    </File>
+    <File Include="App_Theme/images/dialog/ne.png">
+      <publishTime>03/20/2017 14:34:35</publishTime>
+    </File>
+    <File Include="App_Theme/images/dialog/nw.png">
+      <publishTime>03/15/2017 09:42:56</publishTime>
+    </File>
+    <File Include="App_Theme/images/dialog/restore.png">
+      <publishTime>03/20/2017 14:34:43</publishTime>
+    </File>
+    <File Include="App_Theme/images/down.png">
+      <publishTime>03/23/2017 14:20:25</publishTime>
+    </File>
+    <File Include="App_Theme/images/downlist.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/excel.png">
+      <publishTime>02/06/2017 13:52:49</publishTime>
+    </File>
+    <File Include="App_Theme/images/excel_hover.png">
+      <publishTime>02/06/2017 13:52:49</publishTime>
+    </File>
+    <File Include="App_Theme/images/exit.png">
+      <publishTime>02/16/2017 15:10:22</publishTime>
+    </File>
+    <File Include="App_Theme/images/fail.png">
+      <publishTime>03/16/2017 17:38:13</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/BTX.gif">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/BTX_hover.png">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/CLKJ.gif">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/CLKJ_HOVER.png">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/DH.gif">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/DH_hover.png">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/GDKW.gif">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/GDKW_hover.png">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/GQGY.gif">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/GQGY_hover.png">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/HDKJ.gif">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/HDKJ_hover.png">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/JA.gif">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/JA_hover.png">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/KLYD.gif">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/KLYD_hover.png">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/KWDH.gif">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/KWDH_hover.png">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/PPT.gif">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/PPT_hover.png">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/QWGD.gif">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/QWGD_hover.png">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/SJ.gif">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/SJ_hover.png">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/TP.gif">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/TP_hover.png">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/WK.gif">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/WK_hover.png">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/XTKJ.gif">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/XTKJ_hover.png">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/YP.gif">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/YP_hover.png">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/ZRPD.gif">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/ZRPD_D.gif">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/ZRPD_D_hover.png">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/ZRPD_hover.png">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/ZRPD_X.gif">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fileIcon/ZRPD_X_hover.png">
+      <publishTime>03/14/2017 14:38:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/full.png">
+      <publishTime>03/30/2017 14:25:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/fulled.png">
+      <publishTime>03/30/2017 14:25:16</publishTime>
+    </File>
+    <File Include="App_Theme/images/GDKW.gif">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/GDKW_hover.png">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/goback.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/GQGY.gif">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/GQGY_hover.png">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/head1.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/head2.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/hide.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/homeBg.jpg">
+      <publishTime>04/10/2017 18:38:41</publishTime>
+    </File>
+    <File Include="App_Theme/images/homeBg.png">
+      <publishTime>02/16/2017 17:57:49</publishTime>
+    </File>
+    <File Include="App_Theme/images/Homework.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/Hudong.png">
+      <publishTime>02/06/2017 13:52:50</publishTime>
+    </File>
+    <File Include="App_Theme/images/Hudong_hover.png">
+      <publishTime>02/06/2017 13:52:50</publishTime>
+    </File>
+    <File Include="App_Theme/images/Icon_1.png">
+      <publishTime>03/23/2017 14:14:17</publishTime>
+    </File>
+    <File Include="App_Theme/images/image.png">
+      <publishTime>02/06/2017 13:52:50</publishTime>
+    </File>
+    <File Include="App_Theme/images/image_hover.png">
+      <publishTime>02/06/2017 13:52:50</publishTime>
+    </File>
+    <File Include="App_Theme/images/JA.gif">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/JA_hover.png">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/kejian.png">
+      <publishTime>02/06/2017 13:52:50</publishTime>
+    </File>
+    <File Include="App_Theme/images/kejian_hover.png">
+      <publishTime>02/06/2017 13:52:50</publishTime>
+    </File>
+    <File Include="App_Theme/images/KWDH.gif">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/KWDH_hover.png">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/Laptop.png">
+      <publishTime>02/16/2017 15:10:22</publishTime>
+    </File>
+    <File Include="App_Theme/images/leftBg.png">
+      <publishTime>02/16/2017 17:57:49</publishTime>
+    </File>
+    <File Include="App_Theme/images/liIcon.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/liIcon2.png">
+      <publishTime>02/16/2017 15:10:22</publishTime>
+    </File>
+    <File Include="App_Theme/images/loading.gif">
+      <publishTime>02/24/2017 19:26:26</publishTime>
+    </File>
+    <File Include="App_Theme/images/movie.png">
+      <publishTime>02/06/2017 13:52:50</publishTime>
+    </File>
+    <File Include="App_Theme/images/movie_hover.png">
+      <publishTime>02/06/2017 13:52:50</publishTime>
+    </File>
+    <File Include="App_Theme/images/myClass.png">
+      <publishTime>02/21/2017 16:25:35</publishTime>
+    </File>
+    <File Include="App_Theme/images/noneRec.png">
+      <publishTime>03/09/2017 19:56:41</publishTime>
+    </File>
+    <File Include="App_Theme/images/noneSearch.png">
+      <publishTime>03/28/2017 17:05:49</publishTime>
+    </File>
+    <File Include="App_Theme/images/noneUpload.png">
+      <publishTime>03/28/2017 17:05:49</publishTime>
+    </File>
+    <File Include="App_Theme/images/Note-Book.png">
+      <publishTime>02/16/2017 15:10:22</publishTime>
+    </File>
+    <File Include="App_Theme/images/pageList.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/pageList_hover.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/paper.png">
+      <publishTime>02/06/2017 13:52:50</publishTime>
+    </File>
+    <File Include="App_Theme/images/paper_hover.png">
+      <publishTime>02/06/2017 13:52:50</publishTime>
+    </File>
+    <File Include="App_Theme/images/password.png">
+      <publishTime>02/16/2017 15:10:22</publishTime>
+    </File>
+    <File Include="App_Theme/images/PENCIL06.ICO">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/play.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/PPT.gif">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/ppt.png">
+      <publishTime>02/06/2017 13:52:50</publishTime>
+    </File>
+    <File Include="App_Theme/images/ppt_hover.png">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/repeatBg.gif">
+      <publishTime>02/16/2017 17:57:49</publishTime>
+    </File>
+    <File Include="App_Theme/images/save.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/search.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/selected.png">
+      <publishTime>02/16/2017 17:57:49</publishTime>
+    </File>
+    <File Include="App_Theme/images/show.png">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/SJ.gif">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/SJ_hover.png">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/start.png">
+      <publishTime>02/16/2017 17:57:49</publishTime>
+    </File>
+    <File Include="App_Theme/images/stop.png">
+      <publishTime>03/10/2017 17:00:30</publishTime>
+    </File>
+    <File Include="App_Theme/images/success.png">
+      <publishTime>03/16/2017 17:38:13</publishTime>
+    </File>
+    <File Include="App_Theme/images/TP.gif">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/TP_hover.png">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/up.png">
+      <publishTime>03/23/2017 14:20:25</publishTime>
+    </File>
+    <File Include="App_Theme/images/uploadIcon.png">
+      <publishTime>03/10/2017 17:00:30</publishTime>
+    </File>
+    <File Include="App_Theme/images/uploading.png">
+      <publishTime>03/10/2017 17:00:30</publishTime>
+    </File>
+    <File Include="App_Theme/images/user.png">
+      <publishTime>02/16/2017 15:10:22</publishTime>
+    </File>
+    <File Include="App_Theme/images/video.png">
+      <publishTime>02/06/2017 13:52:51</publishTime>
+    </File>
+    <File Include="App_Theme/images/video_hover.png">
+      <publishTime>02/06/2017 13:52:51</publishTime>
+    </File>
+    <File Include="App_Theme/images/vssver2.scc">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/images/White.png">
+      <publishTime>03/23/2017 14:39:26</publishTime>
+    </File>
+    <File Include="App_Theme/images/word.png">
+      <publishTime>02/06/2017 13:52:51</publishTime>
+    </File>
+    <File Include="App_Theme/images/word_hover.png">
+      <publishTime>02/06/2017 13:52:51</publishTime>
+    </File>
+    <File Include="App_Theme/images/XTKJ.gif">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/XTKJ_hover.png">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/YP.gif">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/YP_hover.png">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/ZRPD.gif">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/images/ZRPD_hover.png">
+      <publishTime>02/20/2017 10:05:11</publishTime>
+    </File>
+    <File Include="App_Theme/js/audioControls.js">
+      <publishTime>03/16/2017 15:54:57</publishTime>
+    </File>
+    <File Include="App_Theme/js/beike.js">
+      <publishTime>04/11/2017 17:16:28</publishTime>
+    </File>
+    <File Include="App_Theme/js/catalog.js">
+      <publishTime>02/06/2017 13:52:51</publishTime>
+    </File>
+    <File Include="App_Theme/js/common.js">
+      <publishTime>03/21/2017 16:58:21</publishTime>
+    </File>
+    <File Include="App_Theme/js/config.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/js/db.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/js/Drag.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/js/dragElement.js">
+      <publishTime>04/12/2017 10:42:27</publishTime>
+    </File>
+    <File Include="App_Theme/js/dragItem.js">
+      <publishTime>04/12/2017 15:18:45</publishTime>
+    </File>
+    <File Include="App_Theme/js/exit.js">
+      <publishTime>03/28/2017 15:42:41</publishTime>
+    </File>
+    <File Include="App_Theme/js/idangerous.swiper.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/js/idangerous.swiper.min.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/js/iframe.js">
+      <publishTime>03/27/2017 14:40:57</publishTime>
+    </File>
+    <File Include="App_Theme/js/javaDrag.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/js/jquery-1.10.2.min.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/js/jquery.cookie.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/js/jquery.form.controls.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/js/json2.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/js/Kingsun.Select.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/js/KJajaxUpload.js">
+      <publishTime>04/06/2017 17:38:56</publishTime>
+    </File>
+    <File Include="App_Theme/js/painter.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/js/resource.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/js/spotlight.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/js/tab.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/js/teacher.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/js/testDb.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/js/vssver2.scc">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="App_Theme/sounds/start01.mp3">
+      <publishTime>04/01/2017 14:48:47</publishTime>
+    </File>
+    <File Include="AttLesson/Js/Management/TeachLessonManage.js">
+      <publishTime>03/29/2017 20:18:41</publishTime>
+    </File>
+    <File Include="AttLesson/Js/PageInit/SelectBookInit.js">
+      <publishTime>04/01/2017 17:18:44</publishTime>
+    </File>
+    <File Include="AttLesson/Js/PageInit/TeachingInit.js">
+      <publishTime>04/12/2017 14:59:12</publishTime>
+    </File>
+    <File Include="AttLesson/Js/PageInit/TeachLessonInit.js">
+      <publishTime>02/21/2017 16:23:19</publishTime>
+    </File>
+    <File Include="AttLesson/Js/Teaching.js">
+      <publishTime>04/12/2017 14:59:17</publishTime>
+    </File>
+    <File Include="AttLesson/Page/Preview.aspx">
+      <publishTime>03/28/2017 14:06:21</publishTime>
+    </File>
+    <File Include="AttLesson/Page/SelectBook.aspx">
+      <publishTime>03/31/2017 15:18:47</publishTime>
+    </File>
+    <File Include="AttLesson/Page/Teaching.aspx">
+      <publishTime>04/11/2017 16:52:10</publishTime>
+    </File>
+    <File Include="bin/Kingsun.DB.dll">
+      <publishTime>02/06/2017 15:21:18</publishTime>
+    </File>
+    <File Include="bin/Kingsun.SmarterClassroom.API.dll">
+      <publishTime>03/29/2017 20:06:33</publishTime>
+    </File>
+    <File Include="bin/Kingsun.SmarterClassroom.BLL.dll">
+      <publishTime>04/13/2017 11:14:21</publishTime>
+    </File>
+    <File Include="bin/Kingsun.SmarterClassroom.Com.dll">
+      <publishTime>03/23/2017 17:52:36</publishTime>
+    </File>
+    <File Include="bin/Kingsun.SmarterClassroom.Common.dll">
+      <publishTime>02/06/2017 15:37:20</publishTime>
+    </File>
+    <File Include="bin/Kingsun.SmarterClassroom.DAL.dll">
+      <publishTime>03/23/2017 17:52:38</publishTime>
+    </File>
+    <File Include="bin/Kingsun.SmarterClassroom.Mod.dll">
+      <publishTime>03/23/2017 17:52:37</publishTime>
+    </File>
+    <File Include="bin/Kingsun.SmarterClassroom.Models.dll">
+      <publishTime>02/06/2017 15:37:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>02/06/2017 15:21:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>02/06/2017 15:21:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>02/06/2017 15:21:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>02/06/2017 15:21:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>02/06/2017 15:21:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>02/06/2017 15:21:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>02/06/2017 15:21:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>02/06/2017 15:21:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>02/06/2017 15:21:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>02/06/2017 15:21:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>02/06/2017 15:21:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>02/06/2017 15:21:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>02/06/2017 15:21:18</publishTime>
+    </File>
+    <File Include="bin/SmarterClassroomWeb.dll">
+      <publishTime>04/13/2017 11:14:26</publishTime>
+    </File>
+    <File Include="bin/System.Data.SQLite.dll">
+      <publishTime>02/06/2017 15:21:18</publishTime>
+    </File>
+    <File Include="CommonJs/CommonDB/CommonDB.js">
+      <publishTime>04/11/2017 14:20:50</publishTime>
+    </File>
+    <File Include="CommonJs/CommonJS/CommonFuncJS.js">
+      <publishTime>04/06/2017 10:13:32</publishTime>
+    </File>
+    <File Include="CommonJs/CommonJS/OperFunc.js">
+      <publishTime>04/12/2017 16:00:47</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/autoWidth.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/blue.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/btnIcon.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/check-new.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/check-old.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/check.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/datagrid.css">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/dropico.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/help.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/ico-0.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/ico-0_.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/ico-5.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/ico-5_.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/icon_del.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/icon_onload.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/icon_tips.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/jquery.form.controls.css">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/keys.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/keys.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/listIco.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/listIcon.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/loadimg.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/order_speed.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/page.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/pagebtn.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/pagination.css">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/select.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/select_i.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/select_i.zip">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/select_id.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/skin.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/skin_icons.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/valid_icons.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/black/vssver2.scc">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/default/blue.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/default/check.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/default/datagrid.css">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/default/dropico.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/default/ico-0.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/default/ico-0_.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/default/ico-5.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/default/ico-5_.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/default/icon_del.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/default/icon_onload.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/default/icon_tips.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/default/jquery.form.controls.css">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/default/keys.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/default/keys.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/default/loadimg.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/default/order_speed.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/default/PageBg.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/default/skin_icons.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/default/valid_icons.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/default/vssver2.scc">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/jquery.form.controls.js">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/autoWidth.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/blue.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/btnIcon.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/check-old.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/check.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/datagrid.css">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/dropico.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/help.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/ico-0.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/ico-0_.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/ico-5.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/ico-5_.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/icon_del.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/icon_onload.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/icon_tips.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/jquery.form.controls.css">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/keys.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/keys.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/listIco.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/listIcon.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/loadimg.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/order_speed.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/page.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/pagebtn.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/pagination.css">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/psd/vssver2.scc">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/psd/分页图标.psd">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/psd/单选复选按钮.psd">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/psd/新分页.psd">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/select.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/skin.gif">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/skin_icons.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/valid_icons.png">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/mac/vssver2.scc">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/fzcontrols/vssver2.scc">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="CommonJs/jquery/jquery-1.10.2.min.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="CommonJs/jquery/jquery-1.11.2.min.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="CommonJs/jquery/jquery.cookie.js">
+      <publishTime>02/21/2017 16:25:35</publishTime>
+    </File>
+    <File Include="CommonJs/jquery/jquery.json-2.4.js">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="CommonPage/Html/DefaultPageView.html">
+      <publishTime>03/02/2017 11:43:19</publishTime>
+    </File>
+    <File Include="CommonPage/Js/PageInit/ResourcePreviewInit.js">
+      <publishTime>03/08/2017 15:50:02</publishTime>
+    </File>
+    <File Include="CommonPage/Page/Head.ascx">
+      <publishTime>04/06/2017 10:39:18</publishTime>
+    </File>
+    <File Include="CommonPage/Page/ResourcePreview.aspx">
+      <publishTime>03/02/2017 11:43:19</publishTime>
+    </File>
+    <File Include="DefaultW.aspx">
+      <publishTime>03/30/2017 17:54:21</publishTime>
+    </File>
+    <File Include="Handler/BasicHandler.ashx">
+      <publishTime>02/21/2017 16:25:35</publishTime>
+    </File>
+    <File Include="Handler/FileUploadHandler.ashx">
+      <publishTime>03/09/2017 16:55:24</publishTime>
+    </File>
+    <File Include="Handler/Handler.ashx">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="Handler/ReceiveHandler.ashx">
+      <publishTime>02/21/2017 16:25:35</publishTime>
+    </File>
+    <File Include="Index.aspx">
+      <publishTime>04/06/2017 15:28:31</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>02/06/2017 15:32:46</publishTime>
+    </File>
+    <File Include="kingsun.ico">
+      <publishTime>03/23/2017 15:59:03</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>03/29/2017 16:26:14</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>02/07/2017 15:45:40</publishTime>
+    </File>
+    <File Include="PreLesson/Js/Management/PreLessonManagement.js">
+      <publishTime>03/24/2017 16:09:50</publishTime>
+    </File>
+    <File Include="PreLesson/Js/PageInit/AddStandBookInit.js">
+      <publishTime>03/29/2017 15:53:57</publishTime>
+    </File>
+    <File Include="PreLesson/Js/PageInit/LessonView.js">
+      <publishTime>04/07/2017 10:50:43</publishTime>
+    </File>
+    <File Include="PreLesson/Js/PageInit/PreLessonPageInit.js">
+      <publishTime>04/11/2017 11:58:58</publishTime>
+    </File>
+    <File Include="PreLesson/Js/PageInit/PreLessonResourceInit.js">
+      <publishTime>04/13/2017 10:53:33</publishTime>
+    </File>
+    <File Include="PreLesson/Js/PageInit/PreviewInit.js">
+      <publishTime>03/02/2017 11:43:19</publishTime>
+    </File>
+    <File Include="PreLesson/Js/PageInit/resource.js">
+      <publishTime>02/09/2017 15:08:59</publishTime>
+    </File>
+    <File Include="PreLesson/Js/PageInit/UserStandBookInit.js">
+      <publishTime>03/29/2017 15:53:10</publishTime>
+    </File>
+    <File Include="PreLesson/Js/PreLessonPageInit.js">
+      <publishTime>02/06/2017 16:46:01</publishTime>
+    </File>
+    <File Include="PreLesson/Js/PreLessonResourceInit.js">
+      <publishTime>02/07/2017 14:40:05</publishTime>
+    </File>
+    <File Include="PreLesson/Js/resource.js">
+      <publishTime>02/06/2017 16:26:11</publishTime>
+    </File>
+    <File Include="PreLesson/Page/AddStandBook.aspx">
+      <publishTime>04/06/2017 10:41:43</publishTime>
+    </File>
+    <File Include="PreLesson/Page/crossOriginAccess.html">
+      <publishTime>03/30/2017 17:05:16</publishTime>
+    </File>
+    <File Include="PreLesson/Page/LessonView.html">
+      <publishTime>04/11/2017 16:52:47</publishTime>
+    </File>
+    <File Include="PreLesson/Page/PreLesson.aspx">
+      <publishTime>04/13/2017 10:55:17</publishTime>
+    </File>
+    <File Include="PreLesson/Page/Preview.aspx">
+      <publishTime>02/13/2017 19:51:35</publishTime>
+    </File>
+    <File Include="PreLesson/Page/UserStandBook.aspx">
+      <publishTime>04/06/2017 10:42:44</publishTime>
+    </File>
+    <File Include="Properties/DataSources/Kingsun.SmarterClassroom.BLL.BasicService.C_Textbook.datasource">
+      <publishTime>03/14/2017 13:45:31</publishTime>
+    </File>
+    <File Include="Properties/DataSources/Kingsun.SmarterClassroom.BLL.BasicService.C_TextbookCatalog.datasource">
+      <publishTime>03/14/2017 13:45:31</publishTime>
+    </File>
+    <File Include="Properties/DataSources/Kingsun.SmarterClassroom.BLL.BasicService.C_UserInfo.datasource">
+      <publishTime>03/14/2017 13:45:31</publishTime>
+    </File>
+    <File Include="Properties/DataSources/Kingsun.SmarterClassroom.BLL.BasicService.R_Resource.datasource">
+      <publishTime>03/14/2017 13:45:31</publishTime>
+    </File>
+    <File Include="Properties/DataSources/Kingsun.SmarterClassroom.BLL.BigdataService.SyLogErrorList.datasource">
+      <publishTime>03/14/2017 13:49:41</publishTime>
+    </File>
+    <File Include="Properties/DataSources/Kingsun.SmarterClassroom.BLL.BigdataService.SyLogMonitorList.datasource">
+      <publishTime>03/14/2017 13:49:41</publishTime>
+    </File>
+    <File Include="Resource/class/AnimationControler.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/class/class.zip">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/class/ClickReadComponent.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/class/ClickSelectComponnet.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/class/commonFunction.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/class/createjs-2015.11.26.min.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/class/dataHandle.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/class/DragComponent.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/class/FollowReadControler.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/class/HelpPanel.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/class/LineComponent.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/class/PaintComponnet.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/class/RecordControlImpl.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/class/SoundCtrlComp.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/class/SoundEffect.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/class/StepClickCartoonComponent.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/class/StepClickReadComponent.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/class/TipPanel.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/class/vssver2.scc">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/css/common.css">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/css/dialog_skin.css">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/css/help.css">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/css/idangerous.swiper.css">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/css/solid.css">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/css/swiper.css">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/css/swiper.min.css">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/css/tips.css">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/css/ui-dialog.css">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/css/vssver2.scc">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/db.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/dialog/dialog-min.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/dialog/dialog-plus-min.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/dialog/dialog-plus.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/dialog/dialog.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/dialog/require.js">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/dialog/vssver2.scc">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/fonts/Microsoft YaHei UI Bold.ttf">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/fonts/vssver2.scc">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/arrow.gif">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/bg.gif">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/bg_l.gif">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/bg_l.png">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/bg_r.gif">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/bg_r.png">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/boxarr.png">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/btn.gif">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/btnBack.gif">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/btnhome.png">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/btnIco.png">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/btnNext.gif">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/btnpage.png">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/btnPlay.png">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/btnPrev.gif">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/btnRecord.png">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/btnwin.png">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/ebg1--.gif">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/ebg1.png">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/ebg2.gif">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/ebg2.png">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-10a.jpg">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-11a.jpg">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-12a.jpg">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-13a.jpg">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-14a.jpg">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-15a.jpg">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-16a.jpg">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-17a.jpg">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-18a.jpg">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-19a.jpg">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-1a.jpg">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-20a.jpg">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-21a.jpg">
+      <publishTime>02/06/2017 16:46:28</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-23a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-25a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-26a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-27a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-29a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-2a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-30a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-31a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-32a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-33a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-34a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-35a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-36a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-37a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-38a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-3a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-4a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-5a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-6a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-7a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-8a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/1-9a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/2-10a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/2-11a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/2-1a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/2-2a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/2-3a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/2-4a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/2-5a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/2-6a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/2-7a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/2-8a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/2-9a.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/3-10b.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/3-11b.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/3-12b.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/3-13b.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/3-14b.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/3-15b.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/3-16b.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/3-17b.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/3-18b.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/3-19b.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/3-1main.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/3-2b.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/3-3b.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/3-4b.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/3-5b.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/3-5b.png">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/3-6b.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/3-7b.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/3-8b.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/3-9b.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/help_back.png">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/help/vssver2.scc">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/homebg.gif">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/homebg.png">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/img1.gif">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/img2.gif">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/img3.gif">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/mulu/pep1.png">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/mulu/pep2.png">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/mulu/vssver2.scc">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/sad.jpg">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/sad.png">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/szkt.png">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/images/vssver2.scc">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/js/config.js">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/js/content.js">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/js/db.js">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/js/home.js">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/js/HZRecorder.js">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/js/idangerous.swiper.min.js">
+      <publishTime>02/06/2017 16:46:29</publishTime>
+    </File>
+    <File Include="Resource/js/iframe.js">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/js/index.js">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/js/jquery-1.10.2.min.js">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/js/json2.js">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/js/readXml.js">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/js/slide.js">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/js/swiper.js">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/js/swiper.min.js">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/js/vssver2.scc">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/pagebg/P01.jpg">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/pagebg/P02.jpg">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/pagebg/P03.jpg">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/pagebg/P04.jpg">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/pagebg/P05.jpg">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/pagebg/P06.jpg">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/pagebg/P07.jpg">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/pagebg/P08.jpg">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/pagebg/P09.jpg">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/pagebg/P10.jpg">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/pagebg/P11.jpg">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/pagebg/P12.jpg">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/pagebg/P13.jpg">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/pagebg/P14.jpg">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/pagebg/P15.jpg">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/pagebg/P16.jpg">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/pagebg/P17.jpg">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/pagebg/P18.jpg">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/pagebg/P19.jpg">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/pagebg/P20.jpg">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/pagebg/vssver2.scc">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AC1.html">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AC1.js">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AC2.html">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AC2.js">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AC3.html">
+      <publishTime>02/06/2017 16:46:30</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AC3.js">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AL101.html">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AL101.js">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AL201.html">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AL201.js">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AL202.html">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AL202.js">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AL203.html">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AL203.js">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AL204.html">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AL204.js">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AL205.html">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AL205.js">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AL301.html">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AL301.js">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AS3.html">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AS3.js">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AS4.html">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/11AS4.js">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/images/Bitmap1.png">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/images/vssver2.scc">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/images/位图3.jpg">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/libs/createjs-2015.11.26.min.js">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/libs/vssver2.scc">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/p4Atalk.mp4">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/p6AchanD.mp4">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/p6Achant.mp4">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/ask01.mp3">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/ask02.mp3">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/bingo01.mp3">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/bingo02.mp3">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/chant.mp3">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/chant01.mp3">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/chant02.mp3">
+      <publishTime>02/06/2017 16:46:31</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/chant03.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/chant04.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/chant05.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/chant06.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/chantBan.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/chantQC.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/learn.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/learn01.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/learn02.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/learn03.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/learn04.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/learn05.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/learn06.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/learn07.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/main.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/Main/main01.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/Main/main02.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/Main/main03.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/Main/main04.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/Main/main05.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/Main/main06.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/Main/main07.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/Main/main08.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/Main/main09.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/Main/song01.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/Main/song02.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/Main/song03.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/Main/song04.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/Main/song05.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/Main/vssver2.scc">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/main01.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/main02.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/main03.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/main04.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/main05.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/main06.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/main07.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/main08.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/main09.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/play01.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/play02.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/play03.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/play04.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/play05.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/play06.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/play07.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/play08.mp3">
+      <publishTime>02/06/2017 16:46:32</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/song.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/song00.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/song01.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/song02.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/song03.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/song04.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/songBan.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell1.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell101.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell102.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell103.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell104.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell105.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell106.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell107.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell108.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell109.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell110.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell111.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell112.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell113.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell114.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell115.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell116.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell117.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell118.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell119.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell120.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell201.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/spell202.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/talk.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/talk01.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/talk02.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/talk03.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/talk04.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/talk05.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/talk06.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/talk07.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/try.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/try01.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/try02.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/try03.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/try04.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/try05.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/try06.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/try07.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/try08.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/try09.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/try10.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/vssver2.scc">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/sounds/_76WAV.mp3">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/U1main.mp4">
+      <publishTime>02/06/2017 16:46:33</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/U1sing.mp4">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/A/vssver2.scc">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/11BL101.html">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/11BL101.js">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/11BL201.html">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/11BL201.js">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/11BL202.html">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/11BL202.js">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/11BL301.html">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/11BL301.js">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/11BL401.html">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/11BL401.js">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/11BL402.html">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/11BL402.js">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/11BL501.html">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/11BL501.js">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/11BS3.html">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/11BS3.js">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/images/vssver2.scc">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/images/位图7.png">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/images/未标题1.png">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/libs/createjs-2015.11.26.min.js">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/libs/vssver2.scc">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/P7Btalk.mp4">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/ask01.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/ask02.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/ask03.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/ask04.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/check1.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/check101.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/check102.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/check103.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/check104.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/check105.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/check106.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/check107.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/do13.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/learn01.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/learn02.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/learn03.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/learn04.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/learn05.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/read.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/story01.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/story02.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/story03.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/story04.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/story05.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/story06.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/story07.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/story08.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/story09.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/story10.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/talk01.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/talk02.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/talk03.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/talk04.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/talk05.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/talk06.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/talk07.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/try.mp3">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/sounds/vssver2.scc">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/B/vssver2.scc">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/C/11CS4.html">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/C/11CS4.js">
+      <publishTime>02/06/2017 16:46:34</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/C/libs/createjs-2015.11.26.min.js">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/C/libs/vssver2.scc">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/C/U1Story.mp4">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/C/vssver2.scc">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/JPG/11AL101.jpg">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/JPG/11AS3.jpg">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/JPG/11AS4.jpg">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/JPG/11BL101.jpg">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/JPG/11BL201.jpg">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/JPG/11BL202.jpg">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/JPG/11BL301.jpg">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/JPG/11BL401.jpg">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/JPG/11BL402.jpg">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/JPG/11BS3.jpg">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/JPG/11CS4.jpg">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/JPG/p4Atalk.jpg">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/JPG/P6Achant.jpg">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/JPG/p7Btalk.jpg">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/JPG/U1main.jpg">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/JPG/U1sing.jpg">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/JPG/U1story.jpg">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_1/JPG/vssver2.scc">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/12AL101.html">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/12AL101.js">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/12AL201.html">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/12AL201.js">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/12AL301.html">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/12AL301.js">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/12AL302.html">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/12AL302.js">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/12AS3.html">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/12AS3.js">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/12AS4.html">
+      <publishTime>02/06/2017 16:46:36</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/12AS4.js">
+      <publishTime>02/06/2017 16:46:37</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/images/11AL201_atlas_.json">
+      <publishTime>02/06/2017 16:46:37</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/images/11AL201_atlas_.png">
+      <publishTime>02/06/2017 16:46:37</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/images/12AL201_atlas_.json">
+      <publishTime>02/06/2017 16:46:37</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/images/12AL201_atlas_.png">
+      <publishTime>02/06/2017 16:46:37</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/images/Image.png">
+      <publishTime>02/06/2017 16:46:37</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/images/Image1.png">
+      <publishTime>02/06/2017 16:46:37</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/images/Image1_1.png">
+      <publishTime>02/06/2017 16:46:37</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/images/Image1副本.png">
+      <publishTime>02/06/2017 16:46:37</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/images/vssver2.scc">
+      <publishTime>02/06/2017 16:46:37</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/libs/createjs-2015.11.26.min.js">
+      <publishTime>02/06/2017 16:46:37</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/libs/vssver2.scc">
+      <publishTime>02/06/2017 16:46:37</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/P14Atalk.mp4">
+      <publishTime>02/06/2017 16:46:37</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/P16AchaD.mp4">
+      <publishTime>02/06/2017 16:46:38</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/P16Achan.mp4">
+      <publishTime>02/06/2017 16:46:38</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/ask01.mp3">
+      <publishTime>02/06/2017 16:46:38</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/ask02.mp3">
+      <publishTime>02/06/2017 16:46:38</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/learn01.mp3">
+      <publishTime>02/06/2017 16:46:38</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/learn02.mp3">
+      <publishTime>02/06/2017 16:46:38</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/learn03.mp3">
+      <publishTime>02/06/2017 16:46:38</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/learn04.mp3">
+      <publishTime>02/06/2017 16:46:38</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/learn05.mp3">
+      <publishTime>02/06/2017 16:46:38</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/learn06.mp3">
+      <publishTime>02/06/2017 16:46:38</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/learn07.mp3">
+      <publishTime>02/06/2017 16:46:38</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/Main/main01.mp3">
+      <publishTime>02/06/2017 16:46:38</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/Main/main02.mp3">
+      <publishTime>02/06/2017 16:46:38</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/Main/main03.mp3">
+      <publishTime>02/06/2017 16:46:38</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/Main/main04.mp3">
+      <publishTime>02/06/2017 16:46:38</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/Main/main05.mp3">
+      <publishTime>02/06/2017 16:46:38</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/Main/main06.mp3">
+      <publishTime>02/06/2017 16:46:38</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/Main/main07.mp3">
+      <publishTime>02/06/2017 16:46:38</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/Main/main08.mp3">
+      <publishTime>02/06/2017 16:46:38</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/Main/main09.mp3">
+      <publishTime>02/06/2017 16:46:38</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/Main/main10.mp3">
+      <publishTime>02/06/2017 16:46:38</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/Main/song01.mp3">
+      <publishTime>02/06/2017 16:46:38</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/Main/song02.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/Main/song03.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/Main/song04.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/Main/song05.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/Main/song06.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/Main/song07.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/Main/song08.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/Main/vssver2.scc">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/read01.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/read02.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/read03.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/read04.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell/spell101.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell/spell102.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell/spell103.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell/spell104.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell/spell105.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell/spell106.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell/spell107.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell/spell108.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell/spell109.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell/spell110.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell/spell111.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell/spell112.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell/spell113.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell/spell114.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell/spell115.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell/spell116.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell/spell117.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell/spell118.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell/spell119.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell/spell120.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell/vssver2.scc">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell101.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell102.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell103.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell104.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell105.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell106.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell107.mp3">
+      <publishTime>02/06/2017 16:46:39</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/spell108.mp3">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/talk01.mp3">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/talk02.mp3">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/talk03.mp3">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/talk04.mp3">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/talk05.mp3">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/talk06.mp3">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/talk07.mp3">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/try.mp3">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/sounds/vssver2.scc">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/U2main.mp4">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/U2sing.mp4">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/A/vssver2.scc">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/12BL101.html">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/12BL101.js">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/12BL201.html">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/12BL201.js">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/12BL202.html">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/12BL202.js">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/12BL301.html">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/12BL301.js">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/12BL401.html">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/12BL401.js">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/12BL501.html">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/12BL501.js">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/12BL601.html">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/12BL601.js">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/12BL701.html">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/12BL701.js">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/12BS3.html">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/12BS3.js">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/images/11BL101_atlas_.json">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/images/11BL101_atlas_.png">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/images/12BL101_atlas_.json">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/images/12BL101_atlas_.png">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/images/Image.png">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/images/Image1.jpg">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/images/Image1.png">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/images/Image1_1.png">
+      <publishTime>02/06/2017 16:46:40</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/images/Image1副本.png">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/images/Image2.png">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/images/Image3.png">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/images/vssver2.scc">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/images/位图3.jpg">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/libs/createjs-2015.11.26.min.js">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/libs/vssver2.scc">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/P17Btalk.mp4">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask101.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask102.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask103.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask104.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask105.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask106.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask107.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask108.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask109.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask110.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask111.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask112.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask113.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask114.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask115.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask116.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask201.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask202.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask203.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask204.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask205.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask206.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask207.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/ask208.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/check.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/learn01.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/learn02.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/learn03.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/learn04.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/learn05.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/learn06.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/P18ask/ask201.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/P18ask/ask202.mp3">
+      <publishTime>02/06/2017 16:46:41</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/P18ask/ask203.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/P18ask/ask204.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/P18ask/ask205.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/P18ask/ask206.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/P18ask/ask207.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/P18ask/ask208.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/P18ask/ask209.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/P18ask/vssver2.scc">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/read01.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/read02.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/read03.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/read04.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/read05.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/read06.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/read07.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/read08.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/read09.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/read10.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/read11.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/read12.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/story01.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/story02.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/story03.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/story04.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/story05.mp3">
+      <publishTime>02/06/2017 16:46:42</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/story06.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/story07.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/story08.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/story09.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/story10.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/story11.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/story12.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/story13.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/story14.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/talk01.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/talk02.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/talk03.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/talk04.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/talk05.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/talk06.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/try.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/vssver2.scc">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/wrap001.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/wrap002.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/wrap003.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/wrap004.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/wrap005.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/wrap006.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/wrap007.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/wrap008.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/wrap009.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/wrap010.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/wrap011.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/wrap012.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/wrap013.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/wrap014.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/wrap015.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/sounds/wrap016.mp3">
+      <publishTime>02/06/2017 16:46:46</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/B/vssver2.scc">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/C/12CS3.html">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/C/12CS3.js">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/C/libs/createjs-2015.11.26.min.js">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/C/libs/vssver2.scc">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/C/U2Story.mp4">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/C/vssver2.scc">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/JPG/12AL101.jpg">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/JPG/12AL201.jpg">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/JPG/12AL301.jpg">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/JPG/12AL302.jpg">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/JPG/12AS3.jpg">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/JPG/12AS4.jpg">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/JPG/12BL101.jpg">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/JPG/12BL201.jpg">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/JPG/12BL202.jpg">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/JPG/12BL301.jpg">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/JPG/12BL401.jpg">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/JPG/12BS3.jpg">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/JPG/12CS3.jpg">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/JPG/p14Atalk.jpg">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/JPG/P16Achant.jpg">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/JPG/P17talk.jpg">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/JPG/U2main.jpg">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/JPG/U2sing.jpg">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/JPG/U2story.jpg">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/P_1/U_2/JPG/vssver2.scc">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/soundeffect/chantbg.mp3">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/soundeffect/commonbg.mp3">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/soundeffect/hi.mp3">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/soundeffect/right.mp3">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/soundeffect/vssver2.scc">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/soundeffect/wrong.mp3">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/template/configuration.xml">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/template/vssver2.scc">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/template/上色.html">
+      <publishTime>02/06/2017 16:46:47</publishTime>
+    </File>
+    <File Include="Resource/template/动画控制.html">
+      <publishTime>02/06/2017 16:46:48</publishTime>
+    </File>
+    <File Include="Resource/template/声音控制器.html">
+      <publishTime>02/06/2017 16:46:48</publishTime>
+    </File>
+    <File Include="Resource/template/拖动题.html">
+      <publishTime>02/06/2017 16:46:48</publishTime>
+    </File>
+    <File Include="Resource/template/新点读动画.html">
+      <publishTime>02/06/2017 16:46:48</publishTime>
+    </File>
+    <File Include="Resource/template/点读动画.html">
+      <publishTime>02/06/2017 16:46:48</publishTime>
+    </File>
+    <File Include="Resource/template/点选.html">
+      <publishTime>02/06/2017 16:46:48</publishTime>
+    </File>
+    <File Include="Resource/template/点选进入上下步点读.html">
+      <publishTime>02/06/2017 16:46:48</publishTime>
+    </File>
+    <File Include="Resource/template/练习.html">
+      <publishTime>02/06/2017 16:46:48</publishTime>
+    </File>
+    <File Include="Resource/template/跟读题.html">
+      <publishTime>02/06/2017 16:46:48</publishTime>
+    </File>
+    <File Include="Resource/template/连线题+点选.html">
+      <publishTime>02/06/2017 16:46:48</publishTime>
+    </File>
+    <File Include="Resource/template/连线题.html">
+      <publishTime>02/06/2017 16:46:48</publishTime>
+    </File>
+    <File Include="setup.html">
+      <publishTime>03/30/2017 16:59:34</publishTime>
+    </File>
+    <File Include="Setup/yk_v3.3.0.exe">
+      <publishTime>03/30/2017 16:48:45</publishTime>
+    </File>
+    <File Include="Setup/学生端.zip">
+      <publishTime>03/30/2017 16:48:45</publishTime>
+    </File>
+    <File Include="Setup/易课_v3.3.0.apk">
+      <publishTime>03/30/2017 16:48:46</publishTime>
+    </File>
+    <File Include="Setup/易课学生端_v1.2.apk">
+      <publishTime>12/13/2016 11:26:02</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/13/2017 11:14:27</publishTime>
+    </File>
+    <File Include="备课资源类型与图标对应表.docx">
+      <publishTime>03/14/2017 10:36:14</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

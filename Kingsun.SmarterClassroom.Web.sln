@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingsun.SmarterClassroom.BLL", "Kingsun.SmarterClassroom.BLL\Kingsun.SmarterClassroom.BLL.csproj", "{127A2FEF-8195-4081-8987-AEF498425C06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingsun.SmarterClassroom.DAL", "Kingsun.SmarterClassroom.DAL\Kingsun.SmarterClassroom.DAL.csproj", "{0D9ABD44-5E18-41C0-80CB-EA0788E69FDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingsun.SmarterClassroom.Com", "Kingsun.SmarterClassroom.Com\Kingsun.SmarterClassroom.Com.csproj", "{29161D64-7CE4-4B4B-BE1D-38FA64A9D4F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingsun.SmarterClassroom.Mod", "Kingsun.SmarterClassroom.Mod\Kingsun.SmarterClassroom.Mod.csproj", "{54D40CED-55F8-4821-9516-2465FAA80D6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingsun.SmarterClassroom.Web", "Kingsun.SmarterClassroom.Web\Kingsun.SmarterClassroom.Web.csproj", "{EB568CE3-C7BF-4F9B-833E-F9F5F6BC5721}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FzDatabase.Room", "..\DataBase\FzDatabase.Room\FzDatabase.Room.csproj", "{56B8AB6E-9032-40CB-A990-5B7C2B2733B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fz.Common.Dict", "..\Common\Fz.Common.Dict\Fz.Common.Dict.csproj", "{549F09BF-0E74-4F34-8CE3-E3F15AE5433B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{127A2FEF-8195-4081-8987-AEF498425C06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{127A2FEF-8195-4081-8987-AEF498425C06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{127A2FEF-8195-4081-8987-AEF498425C06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{127A2FEF-8195-4081-8987-AEF498425C06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D9ABD44-5E18-41C0-80CB-EA0788E69FDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D9ABD44-5E18-41C0-80CB-EA0788E69FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D9ABD44-5E18-41C0-80CB-EA0788E69FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D9ABD44-5E18-41C0-80CB-EA0788E69FDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29161D64-7CE4-4B4B-BE1D-38FA64A9D4F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29161D64-7CE4-4B4B-BE1D-38FA64A9D4F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29161D64-7CE4-4B4B-BE1D-38FA64A9D4F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29161D64-7CE4-4B4B-BE1D-38FA64A9D4F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54D40CED-55F8-4821-9516-2465FAA80D6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54D40CED-55F8-4821-9516-2465FAA80D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54D40CED-55F8-4821-9516-2465FAA80D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54D40CED-55F8-4821-9516-2465FAA80D6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB568CE3-C7BF-4F9B-833E-F9F5F6BC5721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB568CE3-C7BF-4F9B-833E-F9F5F6BC5721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB568CE3-C7BF-4F9B-833E-F9F5F6BC5721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB568CE3-C7BF-4F9B-833E-F9F5F6BC5721}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56B8AB6E-9032-40CB-A990-5B7C2B2733B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56B8AB6E-9032-40CB-A990-5B7C2B2733B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56B8AB6E-9032-40CB-A990-5B7C2B2733B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56B8AB6E-9032-40CB-A990-5B7C2B2733B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{549F09BF-0E74-4F34-8CE3-E3F15AE5433B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{549F09BF-0E74-4F34-8CE3-E3F15AE5433B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{549F09BF-0E74-4F34-8CE3-E3F15AE5433B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{549F09BF-0E74-4F34-8CE3-E3F15AE5433B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

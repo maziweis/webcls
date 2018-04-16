@@ -1,0 +1,9 @@
+﻿------------用户教材关系表新增教材类型ID字段  2017-05-10 韦帅-------------
+  alter table clr_electronic_book add BookType int
+  alter table clr_electronic_book add Stage int
+  ------------操作记录表新增教材类型ID字段  2017-05-10 韦帅-------------
+  alter table clr_pageInit add BookType int
+  ------------操作记录表新增教材类型ID字段  2017-05-11 马梓崴-------------
+  alter table clr_pageInit add Stage int
+  ------------操作记录表新增教材类型ID字段  2017-08-10 马梓崴-------------
+  alter table clr_pageInit add UnitName nvarchar(100)

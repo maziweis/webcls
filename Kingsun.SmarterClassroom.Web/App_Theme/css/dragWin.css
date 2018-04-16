@@ -1,0 +1,153 @@
+﻿@charset "utf-8";
+body, div, h2 {
+	margin:0;
+	padding:0;
+}
+body {	
+	font:12px/1.5 \5fae\8f6f\96c5\9ed1;
+	color:#333;
+}
+#dragToolBar {
+	position:absolute;
+	top:20px;
+	right:20px;
+	width:410px;
+	height:200px;
+	background:#e9e9e9;
+	border:1px solid #e9e9e9;
+	border-radius:5px;
+	box-shadow:0 1px 3px 2px #c5c5c5;
+    z-index:999;
+}
+#dragToolBar .title {
+	position:relative;
+	height:27px;
+    line-height:27px;
+	margin:5px;
+    width:180px;
+    padding-left:30px;
+    overflow:hidden;
+}
+#dragToolBar .title h2 {
+	font-size:14px;
+	height:27px;
+	line-height:24px;
+	border-bottom:1px solid #A1B4B0;
+}
+#dragToolBar .title div {
+	position:absolute;
+	height:19px;
+	top:2px;
+	right:0;
+}
+#dragToolBar .title a, a.open {
+	float:left;
+	width:21px;
+	height:19px;
+	display:block;
+	margin-left:5px;
+	background:url(../images/tool.png) no-repeat;
+}
+a.open {
+	position:absolute;
+	top:60px;
+	right:0px;
+	margin-left:-10px;
+	/*background-position:0 0;*/
+    width:60px;
+    height:60px;
+    background:#f9a158;
+    -webkit-border-radius: 0 0 0 60px;
+    z-index:999;
+}
+a.open:hover {
+	background-position:0 -29px;
+    background:#f9a158;
+    -webkit-border-radius: 0 0 0 60px;
+}
+#dragToolBar .title a.min {
+	background-position:-29px 0;
+}
+#dragToolBar .title a.min:hover {
+	background-position:-29px -29px;
+}
+#dragToolBar .title a.max {
+	background-position:-60px 0;
+}
+#dragToolBar .title a.max:hover {
+	background-position:-60px -29px;
+}
+#dragToolBar .title a.revert {
+	background-position:-149px 0;
+	display:none;
+}
+#dragToolBar .title a.revert:hover {
+	background-position:-149px -29px;
+}
+#dragToolBar .title a.close {
+	background-position:-89px 0;
+}
+#dragToolBar .title a.close:hover {
+	background-position:-89px -29px;
+}
+#dragToolBar .content {
+	overflow:auto;
+	margin:0 5px;
+}
+#dragToolBar .resizeBR {
+	position:absolute;
+	width:14px;
+	height:14px;
+	right:0;
+	bottom:0;
+	overflow:hidden;
+	cursor:nw-resize;
+	background:url(../images/resize.png) no-repeat;
+}
+#dragToolBar .resizeL, #dragToolBar .resizeT, #dragToolBar .resizeR, #dragToolBar .resizeB, #dragToolBar .resizeLT, #dragToolBar .resizeTR, #dragToolBar .resizeLB {
+	position:absolute;
+	background:#000;
+	overflow:hidden;
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+#dragToolBar .resizeL, #dragToolBar .resizeR {
+	top:0;
+	width:5px;
+	height:100%;
+	cursor:w-resize;
+}
+#dragToolBar .resizeR {
+	right:0;
+}
+#dragToolBar .resizeT, #dragToolBar .resizeB {
+	width:100%;
+	height:5px;
+	cursor:n-resize;
+}
+#dragToolBar .resizeT {
+	top:0;
+}
+#dragToolBar .resizeB {
+	bottom:0;
+}
+#dragToolBar .resizeLT, #dragToolBar .resizeTR, #dragToolBar .resizeLB {
+	width:8px;
+	height:8px;
+	background:#FF0;
+}
+#dragToolBar .resizeLT {
+	top:0;
+	left:0;
+	cursor:nw-resize;
+}
+#dragToolBar .resizeTR {
+	top:0;
+	right:0;
+	cursor:ne-resize;
+}
+#dragToolBar .resizeLB {
+	left:0;
+	bottom:0;
+	cursor:ne-resize;
+}

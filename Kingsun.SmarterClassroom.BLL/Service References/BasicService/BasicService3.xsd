@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Fz.Core.WcfService.Contracts" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Fz.Core.WcfService.Contracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfR_Resource">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="R_Resource" nillable="true" type="tns:R_Resource" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfR_Resource" nillable="true" type="tns:ArrayOfR_Resource" />
+  <xs:complexType name="R_Resource">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BookReelID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="BreviaryImgUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Catalog" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EditionID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="FileID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FileType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GradeID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="KeyWords" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResourceCreaterID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResourceCreaterName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResourceID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResourceName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResourceSize" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ResourceStyle" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ResourceType" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SchoolStage" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SubjectID" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="R_Resource" nillable="true" type="tns:R_Resource" />
+</xs:schema>

@@ -1,0 +1,178 @@
+﻿@charset "utf-8";
+/*
+ * artDialog skin
+ * http://code.google.com/p/artdialog/
+ * (c) 2009-2011 TangBin, http://www.planeArt.cn
+ *
+ * This is licensed under the GNU LGPL, version 2.1 or later.
+ * For details, see: http://creativecommons.org/licenses/LGPL/2.1/
+ */
+ 
+/* common start */
+body {padding:0;margin:0; _margin:0; _height:100%;/*overflow:hidden;*/ /*IE6 BUG*/ }
+.aui_outer { text-align:left; }
+table.aui_border, table.aui_dialog { border:0; margin:0; border-collapse:collapse; width:auto; }
+.aui_nw, .aui_n, .aui_ne, .aui_w, .aui_c, .aui_e, .aui_sw, .aui_s, .aui_se, .aui_header, .aui_tdIcon, .aui_main, .aui_footer { padding:0; }
+.aui_header, .aui_buttons button { font: 12px/1.11 'Microsoft Yahei', Tahoma, Arial, Helvetica, STHeiti; _font-family:Tahoma,Arial,Helvetica,STHeiti; -o-font-family: Tahoma, Arial; }
+.aui_title { overflow:hidden; text-overflow: ellipsis; }
+.aui_state_noTitle .aui_title { display:none; }
+.aui_close { display:block; position:absolute; text-decoration:none; outline:none; _cursor:pointer; }
+.aui_close:hover { text-decoration:none; }
+.aui_main { text-align:center; min-width:9em; min-width:0\9/*IE8 BUG*/; }
+.aui_content { display:inline-block; *zoom:1; *display:inline; text-align:left; border:none 0; }
+.aui_content.aui_state_full { display:block; width:100%; margin:0; padding:0!important; height:100%; }
+.aui_loading { width:150px; height:150px; text-align:left; text-indent:-999em; overflow:hidden; background:url(../images/dialog/loading.gif) no-repeat center center;background-size:cover;}
+.aui_icon { vertical-align: middle; }
+.aui_icon div { width:48px; height:48px; margin:10px 0 10px 10px; background-position: center center; background-repeat:no-repeat; }
+.aui_buttons { padding:8px; text-align:right; white-space:nowrap; }
+.aui_buttons button { margin-left:15px; padding: 6px 8px; cursor: pointer; display: inline-block; text-align: center; line-height: 1; *padding:4px 10px; *height:2em; letter-spacing:2px; font-family: Tahoma, Arial/9!important; width:auto; overflow:visible; *width:1; color: #333; border: solid 1px #999; border-radius: 5px; background: #DDD; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#DDDDDD'); background: linear-gradient(top, #FFF, #DDD); background: -moz-linear-gradient(top, #FFF, #DDD); background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#DDD)); text-shadow: 0px 1px 1px rgba(255, 255, 255, 1); box-shadow: 0 1px 0 rgba(255, 255, 255, .7),  0 -1px 0 rgba(0, 0, 0, .09); -moz-transition:-moz-box-shadow linear .2s; -webkit-transition: -webkit-box-shadow linear .2s; transition: box-shadow linear .2s; }
+.aui_buttons button::-moz-focus-inner{ border:0; padding:0; margin:0; }
+.aui_buttons button:focus { outline:none 0; border-color:#426DC9; box-shadow:0 0 8px rgba(66, 109, 201, .9); }
+.aui_buttons button:hover { color:#000; border-color:#666; }
+.aui_buttons button:active { border-color:#666; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DDDDDD', endColorstr='#FFFFFF'); background: linear-gradient(top, #DDD, #FFF); background: -moz-linear-gradient(top, #DDD, #FFF); background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#DDD), to(#FFF)); box-shadow:inset 0 1px 5px rgba(66, 109, 201, .9), inset 0 1px 1em rgba(0, 0, 0, .3); }
+.aui_buttons button[disabled] { cursor:default; color:#666; background:#DDD; border: solid 1px #999; filter:alpha(opacity=50); opacity:.5; box-shadow:none; }
+button.aui_state_highlight { color: #FFF; border: solid 1px #1c6a9e; background: #2288cc; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33bbee', endColorstr='#2288cc'); background: linear-gradient(top, #33bbee, #2288cc); background: -moz-linear-gradient(top, #33bbee, #2288cc); background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#33bbee), to(#2288cc)); text-shadow: -1px -1px 1px #1c6a9e; }
+button.aui_state_highlight:hover { color:#FFF; border-color:#0F3A56; }
+button.aui_state_highlight:active { border-color:#1c6a9e; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33bbee', endColorstr='#2288cc'); background: linear-gradient(top, #33bbee, #2288cc); background: -moz-linear-gradient(top, #33bbee, #2288cc); background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#33bbee), to(#2288cc)); }
+/* common end */
+
+.aui_inner { background:#FFF;}
+.aui_nw, .aui_ne, .aui_sw, .aui_se { width:3px; height:3px; }
+.aui_nw, .aui_n, .aui_ne, .aui_w, .aui_e, .aui_sw, .aui_s, .aui_se { background:rgba(0, 0, 0, .05); background:#000\9!important; filter:alpha(opacity=5); }
+.aui_titleBar { position:relative; height:100%;  }
+.aui_title { position:absolute; top:0; left:0; width:100%; height:24px; text-indent:-9999em; overflow:hidden; font-size:0; }
+.aui_state_drag .aui_title { color:#666; }
+.aui_close { padding:0; top:0; right:0; width:18px; height:18px; line-height:18px; text-align:center; font-family: Helvetica, STHeiti; _font-family: '\u9ed1\u4f53', 'Book Antiqua', Palatino; font-size:18px; text-decoration:none; color:#214FA3; }
+.aui_close:hover, .aui_close:active { text-decoration:none; color:#900; }
+.aui_content { color:#666; }
+.aui_state_focus .aui_content { color:#000; }
+@media screen and (min-width:0) {
+	.aui_close { width:30px; height:30px; line-height:30px; border-radius:30px; right:0px; top:-10px; background:#999 url(../images/dialog/close.png) no-repeat center center; color:#FFF; box-shadow:0 1px 3px rgba(0, 0, 0, .3); -moz-transition: linear .06s; -webkit-transition: linear .06s; transition: linear .06s;text-indent:-9999px;border:1px #2a4053 solid;z-index: 9999;background-size:50%;}
+	.aui_close:hover, .aui_close:active { width:32px; height:32px; line-height:32px; border-radius:32px; right:-1px; top:-11px; color:#FFF; box-shadow:0 1px 3px rgba(209, 40, 42, .5); background:#d1282a url(../images/dialog/close.png) no-repeat center center;background-size:50%;}
+	.aui_maxmin{width:30px; height:30px; line-height:30px;border-radius:30px;top:-10px; right:40px;display:block; position:absolute; text-decoration:none; outline:none; _cursor:pointer; padding:0;   text-align:center;font-size:18px; text-decoration:none; color:#214FA3; text-indent:-9999px; background:#999 url(../images/dialog/max.png) no-repeat center center; color:#FFF; box-shadow:0 1px 3px rgba(0, 0, 0, .3); -moz-transition: linear .06s; -webkit-transition: linear .06s; transition: linear .06s;border:1px #2a4053 solid;z-index: 9999;background-size:50%;}
+	.aui_maxmin:hover, .aui_maxmin:active {width:32px; height:32px; line-height:32px;border-radius:32px; right:39px; top:-11px; color:#FFF;text-decoration:none;box-shadow:0 1px 3px rgba(209, 40, 42, .5); background:#d1282a url(../images/dialog/max.png) no-repeat center center;background-size:50%;}
+	.ReducingDown{background:#999 url(../images/dialog/restore.png) no-repeat center center;} 
+	.ReducingDown:hover, .ReducingDown:active{background:#d1282a url(../images/dialog/restore.png) no-repeat center center;} 	
+}
+/*九宫格顶部三格内部容器，用于显示特殊的对话框样式，一般是隐藏的，有需要请打开，以设置不同的图片背景*/
+.aui_nw, .aui_n, .aui_ne{height:3px;}
+.aui_nw_in,.aui_ne_in{display:none;width:3px;}
+.aui_n_in{display:none;height:3px;}
+.aui_ne_in{display:none;}
+
+/*动画弹出窗*/
+.movWin{
+    border-radius: 3px;	
+	box-shadow:
+	-10px 0 5px red, /*左边阴影*/  
+    5px 5px 5px #1D9397 /*右边阴影*/
+    0 -10px 5px blue, /*顶部阴影*/  
+    0 10px 5px green; /*底边阴影 */ 
+}
+.movWin .aui_inner {background:#f7f7f7; }
+.movWin .aui_titleBar { width:100%; height:0; position:relative; bottom:30px; _bottom:0; _margin-top:-30px; }
+.movWin .aui_title { height:29px; line-height:29px; padding:0 25px 0 0; _padding:0; text-indent:5px; color:#FFF; font-weight:700; text-shadow:-1px -1px 0 rgba(33, 79, 183, .7); }
+.movWin .aui_nw, .movWin .aui_ne, .movWin .aui_sw, .movWin .aui_se, .movWin .aui_n, .movWin .aui_s, .movWin .aui_close {}
+.movWin .aui_nw { width:10px; height:48px;background:url("../images/dialog/nw.png") no-repeat left 28px;}
+.movWin .aui_nw_in{ }
+.movWin .aui_n { width:28px; height:48px;background:url("../images/dialog/n.png") repeat-x left 27px;}
+.movWin .aui_n_in{width:30%; height:48px;background:url("../images/dialog/nc.png") no-repeat left top;display:block;float:right;}
+.movWin .aui_ne { width:10px; height:48px;background:url("../images/dialog/ne.png") no-repeat right top;}
+.movWin .aui_ne_in { }
+.movWin .aui_w{ width:10px;background:url("../images/dialog/cw.png") repeat-y left top;}
+.movWin .aui_e{ width:10px;background:url("../images/dialog/ce.png") repeat-y right top;}
+.movWin .aui_sw { width:10px; height:18px;background:url("../images/dialog/bw.png") no-repeat left bottom;}
+.movWin .aui_s {height:18px;background:url("../images/dialog/bc.png") repeat-x left bottom;}
+.movWin .aui_se { width:10px; height:18px;background:url("../images/dialog/be.png") no-repeat right bottom;}
+.movWin .aui_content{padding:0;vertical-align:middle;}
+.movWin .aui_content img{vertical-align:middle;}
+.movWin .aui_content video{vertical-align:middle;}
+/*无边框皮肤的全局*/
+.fullscreen .aui_nw,.fullscreen .aui_n,.fullscreen .aui_ne, .fullscreen .aui_sw,.fullscreen .aui_s,.fullscreen .aui_se{display:none;}
+.fullscreen .aui_w,.fullscreen .aui_e{display:none;}
+.fullscreen .aui_maxmin,.fullscreen .aui_close{top:40px;}
+.fullscreen .aui_maxmin{right:50px;}
+.fullscreen .aui_maxmin:hover, .fullscreen .aui_maxmin:active{right:48px;top:38px;}
+.fullscreen .aui_close{right:10px;}
+.fullscreen .aui_close:hover, .fullscreen .aui_close:active{right:10px;top:38px;}
+
+/*最大化窗口*/
+.maxWin{background-color: #fff;border: 0 none;border-radius: 0px;}
+.maxWin .ui-dialog-body {padding:0px;text-align: center;}	
+.maxWin .b_Close a:link,.maxWin .b_Close a:visited{right:60px;top:10px;border-radius:35px;border:10px solid #21B7B5;box-shadow:2px 2px 2px #1D9397;}
+/*baotin*/
+.baotin .aui_inner { background:0 none;}
+.baotin .aui_titleBar{display:none;}
+.baotin .aui_titleBar { width:100%; height:0; position:relative; bottom:30px; _bottom:0; _margin-top:-30px; }
+.baotin .aui_title { height:29px; line-height:29px; padding:0 25px 0 0; _padding:0; text-indent:5px; color:#FFF; font-weight:700; text-shadow:-1px -1px 0 rgba(33, 79, 183, .7); }
+.baotin .aui_nw, .baotin .aui_ne, .baotin .aui_sw, .baotin .aui_se, .baotin .aui_n, .baotin .aui_s, .baotin .aui_close {}
+.baotin .aui_nw { width:10px; height:48px;display:none;}
+.baotin .aui_n { width:28px; height:48px;background:url("../images/dialog/n.png") repeat-x left 27px;display:none;}
+.baotin .aui_nc { width:40%; height:48px;background:url("../images/dialog/nc.png") repeat-x left top;display:block;float:right;display:none;}
+.baotin .aui_ne { width:10px; height:48px;background:url("../images/dialog/ne.png") no-repeat right top;display:none;}
+.baotin .aui_w{ width:10px;background:url("../images/dialog/cw.png") repeat-y left top;display:none;}
+.baotin .aui_e{ width:10px;background:url("../images/dialog/ce.png") repeat-y right top;display:none;}
+.baotin .aui_sw { width:10px; height:18px;background:url("../images/dialog/bw.png") no-repeat left bottom;display:none;}
+.baotin .aui_s {height:18px;background:url("../images/dialog/bc.png") repeat-x left bottom;display:none;}
+.baotin .aui_se { width:10px; height:18px;background:url("../images/dialog/be.png") no-repeat right bottom;display:none;}
+.baotin .aui_close {top:-10px; right:-10px; _z-index:1; width:30px; height:30px;line-height:30px;display:block;}
+
+/*多图预览*/
+.mPic .aui_inner { background:0 none;}
+.mPic .aui_titleBar { width:100%; height:0; position:relative; bottom:30px; _bottom:0; _margin-top:-30px; }
+.mPic .aui_title { height:0; line-height:0; padding:0 25px 0 0; _padding:0; text-indent:5px; color:#FFF; font-weight:700; text-shadow:-1px -1px 0 rgba(33, 79, 183, .7); }
+.mPic .aui_nw, .mPic .aui_ne, .mPic .aui_sw, .mPic .aui_se, .mPic .aui_n, .mPic .aui_s, .mPic .aui_close {}
+.mPic .aui_nw { width:10px; height:48px;display:none;}
+.mPic .aui_n { width:28px; height:48px;background:url("../images/dialog/n.png") repeat-x left 27px;display:none;}
+.mPic .aui_nc { width:40%; height:48px;background:url("../images/dialog/nc.png") repeat-x left top;display:block;float:right;display:none;}
+.mPic .aui_ne { width:10px; height:48px;background:url("../images/dialog/ne.png") no-repeat right top;display:none;}
+.mPic .aui_w{ width:10px;background:url("../images/dialog/cw.png") repeat-y left top;display:none;}
+.mPic .aui_e{ width:10px;background:url("../images/dialog/ce.png") repeat-y right top;display:none;}
+.mPic .aui_sw { width:10px; height:18px;background:url("../images/dialog/bw.png") no-repeat left bottom;display:none;}
+.mPic .aui_s {height:18px;background:url("../images/dialog/bc.png") repeat-x left bottom;display:none;}
+.mPic .aui_se { width:10px; height:18px;background:url("../images/dialog/be.png") no-repeat right bottom;display:none;}
+.mPic .aui_close {top:50px; right:20px; _z-index:1; width:30px; height:30px;line-height:30px;text-indent:-999rem;border-radius:0;display:block;background:none;background:url(../../App_Theme/images/cloceA_bg.png) center no-repeat;font-size:12px;}
+.mPic .aui_close:hover{top:50px; right:20px;background:#2a4053;width:30px;height:30px;line-height:20px;text-indent:-999rem;border-radius:0;font-size:12px;background:none;background:url(../../App_Theme/images/cloceA_bg.png) center no-repeat;}
+
+/*newWin*/
+.newWin .aui_nw,.newWin .aui_n,.newWin .aui_ne, .newWin .aui_sw,.newWin .aui_s,.newWin .aui_se{display:none;}
+.newWin .aui_w,.newWin .aui_e{display:none;}
+.newWin .aui_maxmin,.newWin .aui_close{top:40px;}
+.newWin .aui_maxmin{right:50px;}
+.newWin .aui_maxmin:hover, .newWin .aui_maxmin:active{right:48px;top:38px;}
+.newWin .aui_close{top:0;left:0;width:60px;height:60px;background:url("../images/newWin/close.png") center no-repeat;border:none;border-radius:0;cursor:pointer;text-indent:-999em;}
+.newWin .aui_close:hover, .newWin .aui_close:active{top:0;left:0;width:60px;height:60px;background:url("../images/newWin/close.png") center no-repeat;border:none;border-radius:0;text-indent:-999em;}
+.newWin .show_tool{width:100%;display:block;position:absolute;top:0;height:60px;background:none;z-index:2;}
+.newWin .aui_topT{width:100%;display:block;position:absolute;top:0;height:60px;background:rgba(255,255,255,0.8);box-shadow:1px -1px 20px 0px #90949c;z-index:3;}
+.newWin .aui_topT h5{width:100%;text-align:center;line-height:60px;color:#000;font-weight:bold;font-size:20px;display:block;position:absolute;z-index:0;}
+.newWin .aui_topT h5 b{color:#2288cc;}
+.newWin .aui_topT a{position:relative;top:6px;float:right;margin:0 5px;background:url(../images/dialog/headTools.png) 8px top no-repeat;}
+.newWin .aui_topT .aui_send{height:46px;display:block; background-color:#fff;border:1px solid #e0e4ed;border-radius:5px;cursor:pointer;color:#3b5998;text-align:center;line-height:46px;font-size:18px;padding:0 20px 0 54px;background-position:8px -2px;}
+.newWin .aui_topT .aui_Resend{height:46px;display:none; background-color:#fff;border:1px solid #e0e4ed;border-radius:5px;cursor:pointer;color:#3b5998;text-align:center;line-height:46px;font-size:18px;padding:0 20px 0 54px;background-position:8px -2px;}
+.newWin .aui_topT .aui_look{height:46px;display:none;background-color:#fff;border:1px solid #e0e4ed;border-radius:5px;cursor:pointer;color:#3b5998;text-align:center;line-height:46px;font-size:18px;padding:0 20px 0 54px;background-position:8px -48px;}
+.newWin .aui_topT .aui_retuen{height:46px;display:none;background-color:#fff;border:1px solid #e0e4ed;border-radius:5px;cursor:pointer;color:#3b5998;text-align:center;line-height:46px;font-size:18px;padding:0 20px 0 54px;background-position:8px -96px;}
+/*学生提交信息结构*/
+.msgBox{width:100%;height:100%;position:fixed;top:0;left:0;background-color:#fff;z-index:1;overflow-y:auto;}
+.msgUl{margin-top:60px;text-align:left;}
+.msgUl li{width:10%;display:inline-block;margin:20px 40px;overflow:hidden;}
+.msgUl li.gray{}
+.msgUl li a{width:100%;display:block;cursor:pointer;}
+.msgUl li.gray a{cursor:default;}
+.msgUl li a>img{width:100%;border-radius:10%;opacity:1;}
+.msgUl li.gray a>img{opacity:0.6;}
+.msgUl li a b{width:100%;display:block;text-align:center;}
+.msgUl li a span{width:0;height:40px;display:block;margin:0 auto;overflow:hidden;}
+.msgUl li a span img{/*width:100%;*/max-width:203px;max-height:40px;}
+.gray{  -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray;
+}
+
+/*移动端IOS弹窗*/
+.iframeWin{/*position:fixed;*/position:absolute;z-index:1000;top:0;left:0;width:100%;height:100%;background:#fff;}
+.iframeClose{position:relative;width:100%;height:0;}
+.iframeClose a:link,.iframeClose a:visited{position:absolute;top:20px;right:40px;display:block;width:60px;height:45px;line-height:45px;border-radius:30px;background:#1976d2;text-align:center;color:#fff;font-size:16px;z-index:1002;}
+.iframewin{width:100%;height:100%;z-index:1001;border:none;vertical-align:top;}

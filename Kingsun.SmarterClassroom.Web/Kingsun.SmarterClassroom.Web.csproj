@@ -1,0 +1,1142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB568CE3-C7BF-4F9B-833E-F9F5F6BC5721}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmarterClassroomWeb</RootNamespace>
+    <AssemblyName>SmarterClassroomWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Theme\css\audio.css" />
+    <Content Include="App_Theme\css\base1.css" />
+    <Content Include="App_Theme\css\carouselObj.default.css" />
+    <Content Include="App_Theme\css\chinese.css" />
+    <Content Include="App_Theme\css\dragWin.css" />
+    <Content Include="App_Theme\css\math.css" />
+    <Content Include="App_Theme\css\simple.css" />
+    <Content Include="App_Theme\css\swiper-3.4.2.min.css" />
+    <Content Include="App_Theme\css\task.css" />
+    <Content Include="App_Theme\dialog\artDialog.js" />
+    <Content Include="App_Theme\dialog\template\assets\boy.png" />
+    <Content Include="App_Theme\dialog\template\assets\close.png" />
+    <Content Include="App_Theme\dialog\template\assets\girl.png" />
+    <Content Include="App_Theme\dialog\template\assets\star_all.svg" />
+    <Content Include="App_Theme\dialog\template\assets\star_half.svg" />
+    <Content Include="App_Theme\dialog\template\lib\detach.min.js" />
+    <Content Include="App_Theme\dialog\template\tpl.css" />
+    <Content Include="App_Theme\dialog\template\tpl.html" />
+    <Content Include="App_Theme\dialog\template\tpl.js" />
+    <Content Include="App_Theme\images\addBookIcon.gif" />
+    <Content Include="App_Theme\images\audiobg.gif" />
+    <Content Include="App_Theme\images\audioClose.png" />
+    <Content Include="App_Theme\images\bar.gif" />
+    <Content Include="App_Theme\images\beikeBg.png" />
+    <Content Include="App_Theme\images\bookrack.png" />
+    <Content Include="App_Theme\images\bookShadowL.png" />
+    <Content Include="App_Theme\images\bookShadowR.png" />
+    <Content Include="App_Theme\images\btnAdd.gif" />
+    <Content Include="App_Theme\images\Btn_ico.png" />
+    <Content Include="App_Theme\images\btx_bg.png" />
+    <Content Include="App_Theme\images\cataL.png" />
+    <Content Include="App_Theme\images\classList.png" />
+    <Content Include="App_Theme\images\cloceA_bg.png" />
+    <Content Include="App_Theme\images\coming.png" />
+    <Content Include="App_Theme\images\commendBg.png" />
+    <Content Include="App_Theme\images\coverBg.png" />
+    <Content Include="App_Theme\images\defaultcover.png" />
+    <Content Include="App_Theme\images\defaultHead.png" />
+    <Content Include="App_Theme\images\delete.png" />
+    <Content Include="App_Theme\images\dialog\bc.png" />
+    <Content Include="App_Theme\images\dialog\be.png" />
+    <Content Include="App_Theme\images\dialog\bw.png" />
+    <Content Include="App_Theme\images\dialog\ce.png" />
+    <Content Include="App_Theme\images\dialog\close.png" />
+    <Content Include="App_Theme\images\dialog\cw.png" />
+    <Content Include="App_Theme\images\dialog\e.png" />
+    <Content Include="App_Theme\images\dialog\fileErr.gif" />
+    <Content Include="App_Theme\images\dialog\headTools.png" />
+    <Content Include="App_Theme\images\dialog\loading.gif" />
+    <Content Include="App_Theme\images\dialog\loadingCircle.gif" />
+    <Content Include="App_Theme\images\dialog\max.png" />
+    <Content Include="App_Theme\images\dialog\min.png" />
+    <Content Include="App_Theme\images\dialog\n.png" />
+    <Content Include="App_Theme\images\dialog\nc.png" />
+    <Content Include="App_Theme\images\dialog\ne.png" />
+    <Content Include="App_Theme\images\dialog\nw.png" />
+    <Content Include="App_Theme\images\dialog\owlActImg.png" />
+    <Content Include="App_Theme\images\dialog\poster.png" />
+    <Content Include="App_Theme\images\dialog\restore.png" />
+    <Content Include="App_Theme\images\endsolid.gif" />
+    <Content Include="App_Theme\images\fail.png" />
+    <Content Include="App_Theme\images\fileIcon\BTX.gif" />
+    <Content Include="App_Theme\images\fileIcon\BTX_hover.png" />
+    <Content Include="App_Theme\images\fileIcon\CLKJ.gif" />
+    <Content Include="App_Theme\images\fileIcon\CLKJ_HOVER.png" />
+    <Content Include="App_Theme\images\fileIcon\DH.gif" />
+    <Content Include="App_Theme\images\fileIcon\DH_hover.png" />
+    <Content Include="App_Theme\images\fileIcon\GDKW.gif" />
+    <Content Include="App_Theme\images\fileIcon\GDKW_hover.png" />
+    <Content Include="App_Theme\images\fileIcon\GQGY.gif" />
+    <Content Include="App_Theme\images\fileIcon\GQGY_hover.png" />
+    <Content Include="App_Theme\images\fileIcon\HDKJ.gif" />
+    <Content Include="App_Theme\images\fileIcon\HDKJ_hover.png" />
+    <Content Include="App_Theme\images\fileIcon\JA.gif" />
+    <Content Include="App_Theme\images\fileIcon\JA_hover.png" />
+    <Content Include="App_Theme\images\fileIcon\KLYD.gif" />
+    <Content Include="App_Theme\images\fileIcon\KLYD_hover.png" />
+    <Content Include="App_Theme\images\fileIcon\KWDH.gif" />
+    <Content Include="App_Theme\images\fileIcon\KWDH_hover.png" />
+    <Content Include="App_Theme\images\fileIcon\PPT.gif" />
+    <Content Include="App_Theme\images\fileIcon\PPT_hover.png" />
+    <Content Include="App_Theme\images\fileIcon\QWGD.gif" />
+    <Content Include="App_Theme\images\fileIcon\QWGD_hover.png" />
+    <Content Include="App_Theme\images\fileIcon\SJ.gif" />
+    <Content Include="App_Theme\images\fileIcon\SJ_hover.png" />
+    <Content Include="App_Theme\images\fileIcon\TP.gif" />
+    <Content Include="App_Theme\images\fileIcon\TP_hover.png" />
+    <Content Include="App_Theme\images\fileIcon\WK.gif" />
+    <Content Include="App_Theme\images\fileIcon\WK_hover.png" />
+    <Content Include="App_Theme\images\fileIcon\XTKJ.gif" />
+    <Content Include="App_Theme\images\fileIcon\XTKJ_hover.png" />
+    <Content Include="App_Theme\images\fileIcon\YP.gif" />
+    <Content Include="App_Theme\images\fileIcon\YP_hover.png" />
+    <Content Include="App_Theme\images\fileIcon\ZRPD.gif" />
+    <Content Include="App_Theme\images\fileIcon\ZRPD_D.gif" />
+    <Content Include="App_Theme\images\fileIcon\ZRPD_D_hover.png" />
+    <Content Include="App_Theme\images\fileIcon\ZRPD_hover.png" />
+    <Content Include="App_Theme\images\fileIcon\ZRPD_X.gif" />
+    <Content Include="App_Theme\images\fileIcon\ZRPD_X_hover.png" />
+    <Content Include="App_Theme\images\firstsolid.gif" />
+    <Content Include="App_Theme\images\headBg.png" />
+    <Content Include="App_Theme\images\helpCenter.png" />
+    <Content Include="App_Theme\images\homeBg.jpg" />
+    <Content Include="App_Theme\images\homeIcon.png" />
+    <Content Include="App_Theme\images\homeworkBg.png" />
+    <Content Include="App_Theme\images\ico.gif" />
+    <Content Include="App_Theme\images\Icon_1.png" />
+    <Content Include="App_Theme\images\ku.png" />
+    <Content Include="App_Theme\images\leftBg.png" />
+    <Content Include="App_Theme\images\loading.gif" />
+    <Content Include="App_Theme\images\login.png" />
+    <Content Include="App_Theme\images\master.png" />
+    <Content Include="App_Theme\images\myClass.png" />
+    <Content Include="App_Theme\images\M_bg.png" />
+    <Content Include="App_Theme\images\M_img.png" />
+    <Content Include="App_Theme\images\newWin\close.png" />
+    <Content Include="App_Theme\images\newWin\pingxing.png" />
+    <Content Include="App_Theme\images\newWin\starImg.png" />
+    <Content Include="App_Theme\images\newWin\yitijiao_pingxing.png" />
+    <Content Include="App_Theme\images\noneClass.png" />
+    <Content Include="App_Theme\images\noneGroup.png" />
+    <Content Include="App_Theme\images\noneRec.png" />
+    <Content Include="App_Theme\images\noneSearch.png" />
+    <Content Include="App_Theme\images\noneUpload.png" />
+    <Content Include="App_Theme\images\nullAddList.gif" />
+    <Content Include="App_Theme\images\openEk.png" />
+    <Content Include="App_Theme\images\pswQA.png" />
+    <Content Include="App_Theme\images\resize.png" />
+    <Content Include="App_Theme\images\selected.png" />
+    <Content Include="App_Theme\images\solid.gif" />
+    <Content Include="App_Theme\images\start.png" />
+    <Content Include="App_Theme\images\stop.png" />
+    <Content Include="App_Theme\images\subjectIco.png" />
+    <Content Include="App_Theme\images\success.png" />
+    <Content Include="App_Theme\images\teachingBg.png" />
+    <Content Include="App_Theme\images\teachMap.png" />
+    <Content Include="App_Theme\images\tool.png" />
+    <Content Include="App_Theme\images\toolsIco.png" />
+    <Content Include="App_Theme\images\toolsIco01.png" />
+    <Content Include="App_Theme\images\toolsIco02.png" />
+    <Content Include="App_Theme\images\toolsIco03.png" />
+    <Content Include="App_Theme\images\toolsIco04.png" />
+    <Content Include="App_Theme\images\tsImg\fm001\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\fy001\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\fy002\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\fy003\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\fy004\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\img\001.jpg" />
+    <Content Include="App_Theme\images\tsImg\img\002.jpg" />
+    <Content Include="App_Theme\images\tsImg\img\003.jpg" />
+    <Content Include="App_Theme\images\tsImg\img\004.jpg" />
+    <Content Include="App_Theme\images\tsImg\img\005.jpg" />
+    <Content Include="App_Theme\images\tsImg\img\006.jpg" />
+    <Content Include="App_Theme\images\tsImg\img\007.jpg" />
+    <Content Include="App_Theme\images\tsImg\img\fm001\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\img\fy001\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\img\fy002\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\img\fy002\sound\001.mp3" />
+    <Content Include="App_Theme\images\tsImg\img\page002\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\img\page002\sound\001.mp3" />
+    <Content Include="App_Theme\images\tsImg\img\page003\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\img\page003\sound\001.mp3" />
+    <Content Include="App_Theme\images\tsImg\img\page004\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\img\page004\sound\001.mp3" />
+    <Content Include="App_Theme\images\tsImg\img\page005\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\img\page005\sound\001.mp3" />
+    <Content Include="App_Theme\images\tsImg\img\page006\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\img\page006\sound\001.mp3" />
+    <Content Include="App_Theme\images\tsImg\img\page007\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\img\page007\sound\001.mp3" />
+    <Content Include="App_Theme\images\tsImg\img\page008\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\img\zfd001\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\img\zfd002\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\page002\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\page003\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\page003\sound\03.mp3" />
+    <Content Include="App_Theme\images\tsImg\page004\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\page005\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\page005\sound\05.mp3" />
+    <Content Include="App_Theme\images\tsImg\page006\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\page007\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\page007\sound\07.mp3" />
+    <Content Include="App_Theme\images\tsImg\page008\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\page009\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\page009\sound\09.mp3" />
+    <Content Include="App_Theme\images\tsImg\page010\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\page011\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\page011\sound\11.mp3" />
+    <Content Include="App_Theme\images\tsImg\page012\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\page013\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\page013\sound\13.mp3" />
+    <Content Include="App_Theme\images\tsImg\page014\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\page015\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\zfd001\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\zfd002\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\zfd003\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\zfd004\bg.jpg" />
+    <Content Include="App_Theme\images\tsImg\zfd005\bg.jpg" />
+    <Content Include="App_Theme\images\uploadIcon.png" />
+    <Content Include="App_Theme\images\uploading.png" />
+    <Content Include="App_Theme\images\userCenter.png" />
+    <Content Include="App_Theme\images\view.png" />
+    <Content Include="App_Theme\images\White.png" />
+    <Content Include="App_Theme\images\wrong.png" />
+    <Content Include="App_Theme\js\audioControls.js" />
+    <Content Include="App_Theme\js\beike.js" />
+    <Content Include="App_Theme\js\dragWin.js" />
+    <Content Include="App_Theme\js\exit.js" />
+    <Content Include="App_Theme\js\jplayer\jquery.jplayer.js" />
+    <Content Include="App_Theme\js\jplayer\jquery.jplayer.min.js" />
+    <Content Include="App_Theme\js\jplayer\jquery.jplayer.swf" />
+    <Content Include="App_Theme\js\jquery.nicescroll.js" />
+    <Content Include="App_Theme\js\KingRecord\arrowImg.png" />
+    <Content Include="App_Theme\js\KingRecord\KingsunRecord.css" />
+    <Content Include="App_Theme\js\KingRecord\KingsunRecord.js" />
+    <Content Include="App_Theme\js\KingRecord\swfobject.js" />
+    <Content Include="App_Theme\js\KingRecord\YunzhishengForWeb.swf" />
+    <Content Include="App_Theme\js\KJajaxUpload.js" />
+    <Content Include="App_Theme\js\swiper-3.4.2.jquery.min.js" />
+    <Content Include="App_Theme\js\vconsole.min.js" />
+    <Content Include="App_Theme\sounds\start01.mp3" />
+    <Content Include="AttLesson\Js\db.js" />
+    <Content Include="AttLesson\Js\Management\TeachLessonManage.js" />
+    <Content Include="AttLesson\Js\PageInit\SelectBookInit.js" />
+    <Content Include="AttLesson\Js\PageInit\TeachingInit.js" />
+    <Content Include="AttLesson\Js\PageInit\TeachingTSInit.js" />
+    <Content Include="AttLesson\Js\Teaching.js" />
+    <Content Include="AttLesson\Js\TeachingTS.js" />
+    <Content Include="AttLesson\Page\Preview.aspx" />
+    <Content Include="AttLesson\Page\SelectBook.aspx" />
+    <Content Include="AttLesson\Page\Teaching.aspx" />
+    <Content Include="AttLesson\Page\TeachingTS.aspx" />
+    <Content Include="AttLesson\Page\TeachingTS2.aspx" />
+    <Content Include="CommonJs\CommonDB\CommonDB.js" />
+    <Content Include="CommonJs\CommonJS\CommonFuncJS.js" />
+    <Content Include="CommonJs\CommonJS\jsBridge.js" />
+    <Content Include="CommonJs\CommonJS\OperFunc.js" />
+    <Content Include="CommonJs\CommonJS\RecordFunc.js" />
+    <Content Include="CommonJs\CommonJS\transit.js" />
+    <Content Include="CommonJs\fzcontrols\black\autoWidth.gif" />
+    <Content Include="CommonJs\fzcontrols\black\blue.png" />
+    <Content Include="CommonJs\fzcontrols\black\btnIcon.png" />
+    <Content Include="CommonJs\fzcontrols\black\check-new.png" />
+    <Content Include="CommonJs\fzcontrols\black\check-old.png" />
+    <Content Include="CommonJs\fzcontrols\black\check.png" />
+    <Content Include="CommonJs\fzcontrols\black\datagrid.css" />
+    <Content Include="CommonJs\fzcontrols\black\dropico.gif" />
+    <Content Include="CommonJs\fzcontrols\black\help.png" />
+    <Content Include="CommonJs\fzcontrols\black\ico-0.png" />
+    <Content Include="CommonJs\fzcontrols\black\ico-0_.png" />
+    <Content Include="CommonJs\fzcontrols\black\ico-5.png" />
+    <Content Include="CommonJs\fzcontrols\black\ico-5_.png" />
+    <Content Include="CommonJs\fzcontrols\black\icon_del.gif" />
+    <Content Include="CommonJs\fzcontrols\black\icon_onload.gif" />
+    <Content Include="CommonJs\fzcontrols\black\icon_tips.png" />
+    <Content Include="CommonJs\fzcontrols\black\jquery.form.controls.css" />
+    <Content Include="CommonJs\fzcontrols\black\keys.gif" />
+    <Content Include="CommonJs\fzcontrols\black\keys.png" />
+    <Content Include="CommonJs\fzcontrols\black\listIco.png" />
+    <Content Include="CommonJs\fzcontrols\black\listIcon.png" />
+    <Content Include="CommonJs\fzcontrols\black\loadimg.gif" />
+    <Content Include="CommonJs\fzcontrols\black\order_speed.gif" />
+    <Content Include="CommonJs\fzcontrols\black\page.gif" />
+    <Content Include="CommonJs\fzcontrols\black\pagebtn.gif" />
+    <Content Include="CommonJs\fzcontrols\black\pagination.css" />
+    <Content Include="CommonJs\fzcontrols\black\select.gif" />
+    <Content Include="CommonJs\fzcontrols\black\select_i.gif" />
+    <Content Include="CommonJs\fzcontrols\black\select_id.gif" />
+    <Content Include="CommonJs\fzcontrols\black\skin.gif" />
+    <Content Include="CommonJs\fzcontrols\black\skin_icons.png" />
+    <Content Include="CommonJs\fzcontrols\black\valid_icons.png" />
+    <Content Include="CommonJs\fzcontrols\default\blue.png" />
+    <Content Include="CommonJs\fzcontrols\default\check.png" />
+    <Content Include="CommonJs\fzcontrols\default\datagrid.css" />
+    <Content Include="CommonJs\fzcontrols\default\dropico.gif" />
+    <Content Include="CommonJs\fzcontrols\default\ico-0.png" />
+    <Content Include="CommonJs\fzcontrols\default\ico-0_.png" />
+    <Content Include="CommonJs\fzcontrols\default\ico-5.png" />
+    <Content Include="CommonJs\fzcontrols\default\ico-5_.png" />
+    <Content Include="CommonJs\fzcontrols\default\icon_del.gif" />
+    <Content Include="CommonJs\fzcontrols\default\icon_onload.gif" />
+    <Content Include="CommonJs\fzcontrols\default\icon_tips.png" />
+    <Content Include="CommonJs\fzcontrols\default\jquery.form.controls.css" />
+    <Content Include="CommonJs\fzcontrols\default\keys.gif" />
+    <Content Include="CommonJs\fzcontrols\default\keys.png" />
+    <Content Include="CommonJs\fzcontrols\default\loadimg.gif" />
+    <Content Include="CommonJs\fzcontrols\default\order_speed.gif" />
+    <Content Include="CommonJs\fzcontrols\default\PageBg.png" />
+    <Content Include="CommonJs\fzcontrols\default\skin_icons.png" />
+    <Content Include="CommonJs\fzcontrols\default\valid_icons.png" />
+    <Content Include="CommonJs\fzcontrols\jquery.form.controls.js" />
+    <Content Include="CommonJs\fzcontrols\mac\autoWidth.gif" />
+    <Content Include="CommonJs\fzcontrols\mac\blue.png" />
+    <Content Include="CommonJs\fzcontrols\mac\btnIcon.png" />
+    <Content Include="CommonJs\fzcontrols\mac\check-old.png" />
+    <Content Include="CommonJs\fzcontrols\mac\check.png" />
+    <Content Include="CommonJs\fzcontrols\mac\datagrid.css" />
+    <Content Include="CommonJs\fzcontrols\mac\dropico.gif" />
+    <Content Include="CommonJs\fzcontrols\mac\help.png" />
+    <Content Include="CommonJs\fzcontrols\mac\ico-0.png" />
+    <Content Include="CommonJs\fzcontrols\mac\ico-0_.png" />
+    <Content Include="CommonJs\fzcontrols\mac\ico-5.png" />
+    <Content Include="CommonJs\fzcontrols\mac\ico-5_.png" />
+    <Content Include="CommonJs\fzcontrols\mac\icon_del.gif" />
+    <Content Include="CommonJs\fzcontrols\mac\icon_onload.gif" />
+    <Content Include="CommonJs\fzcontrols\mac\icon_tips.png" />
+    <Content Include="CommonJs\fzcontrols\mac\jquery.form.controls.css" />
+    <Content Include="CommonJs\fzcontrols\mac\keys.gif" />
+    <Content Include="CommonJs\fzcontrols\mac\keys.png" />
+    <Content Include="CommonJs\fzcontrols\mac\listIco.png" />
+    <Content Include="CommonJs\fzcontrols\mac\listIcon.png" />
+    <Content Include="CommonJs\fzcontrols\mac\loadimg.gif" />
+    <Content Include="CommonJs\fzcontrols\mac\order_speed.gif" />
+    <Content Include="CommonJs\fzcontrols\mac\page.gif" />
+    <Content Include="CommonJs\fzcontrols\mac\pagebtn.gif" />
+    <Content Include="CommonJs\fzcontrols\mac\pagination.css" />
+    <Content Include="CommonJs\fzcontrols\mac\select.gif" />
+    <Content Include="CommonJs\fzcontrols\mac\skin.gif" />
+    <Content Include="CommonJs\fzcontrols\mac\skin_icons.png" />
+    <Content Include="CommonJs\fzcontrols\mac\valid_icons.png" />
+    <Content Include="CommonJs\jquery\jquery.cookie.js" />
+    <Content Include="CommonJs\jquery\jquery.json-2.4.js" />
+    <Content Include="CommonPage\Html\DefaultPageView.html" />
+    <Content Include="CommonPage\Js\PageInit\ResourcePreviewInit.js" />
+    <Content Include="CommonPage\Page\Head.ascx" />
+    <Content Include="CommonPage\Page\ResourcePreview.aspx" />
+    <Content Include="DefaultW.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="kingsun.ico" />
+    <Content Include="Login1.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="App_Theme\css\vssver2.scc" />
+    <Content Include="App_Theme\dialog\vssver2.scc" />
+    <Content Include="App_Theme\images\vssver2.scc" />
+    <Content Include="App_Theme\js\vssver2.scc" />
+    <Content Include="Handler\Handler.ashx" />
+    <Content Include="CommonJs\fzcontrols\black\select_i.zip" />
+    <Content Include="CommonJs\fzcontrols\black\vssver2.scc" />
+    <Content Include="CommonJs\fzcontrols\default\vssver2.scc" />
+    <Content Include="CommonJs\fzcontrols\mac\psd\vssver2.scc" />
+    <Content Include="CommonJs\fzcontrols\mac\psd\分页图标.psd" />
+    <Content Include="CommonJs\fzcontrols\mac\psd\单选复选按钮.psd" />
+    <Content Include="CommonJs\fzcontrols\mac\psd\新分页.psd" />
+    <Content Include="CommonJs\fzcontrols\mac\vssver2.scc" />
+    <Content Include="CommonJs\fzcontrols\vssver2.scc" />
+    <Content Include="PersonCenter\guidelines\1.png" />
+    <Content Include="PersonCenter\guidelines\10.png" />
+    <Content Include="PersonCenter\guidelines\11.png" />
+    <Content Include="PersonCenter\guidelines\12.png" />
+    <Content Include="PersonCenter\guidelines\13.png" />
+    <Content Include="PersonCenter\guidelines\14.png" />
+    <Content Include="PersonCenter\guidelines\2.png" />
+    <Content Include="PersonCenter\guidelines\3.png" />
+    <Content Include="PersonCenter\guidelines\4.png" />
+    <Content Include="PersonCenter\guidelines\5.png" />
+    <Content Include="PersonCenter\guidelines\6.png" />
+    <Content Include="PersonCenter\guidelines\7.png" />
+    <Content Include="PersonCenter\guidelines\8.png" />
+    <Content Include="PersonCenter\guidelines\9.png" />
+    <Content Include="PersonCenter\guidelines\bg.jpg" />
+    <Content Include="PersonCenter\guidelines\close.png" />
+    <Content Include="PersonCenter\guidelines\iOS\1.png" />
+    <Content Include="PersonCenter\guidelines\iOS\2.png" />
+    <Content Include="PersonCenter\guidelines\iOS\3.png" />
+    <Content Include="PersonCenter\guidelines\iOS\4.png" />
+    <Content Include="PersonCenter\guidelines\iOS\5.png" />
+    <Content Include="PersonCenter\guidelines\iOS\6.png" />
+    <Content Include="PersonCenter\guidelines\iOS\7.png" />
+    <Content Include="PersonCenter\guidelines\iOS\8.png" />
+    <Content Include="PersonCenter\guidelines\iOS\9.png" />
+    <Content Include="PersonCenter\img\2.gif" />
+    <Content Include="PersonCenter\img\5.gif" />
+    <Content Include="PersonCenter\js\ChangePswd.js" />
+    <Content Include="PersonCenter\js\ClassInfo.js" />
+    <Content Include="PersonCenter\js\HelpDB.js" />
+    <Content Include="PersonCenter\js\Index.js" />
+    <Content Include="PersonCenter\js\MyClass.js" />
+    <Content Include="PersonCenter\page\ChangePswd.aspx" />
+    <Content Include="PersonCenter\page\ClassInfo.aspx" />
+    <Content Include="PersonCenter\page\HelpCenter.aspx" />
+    <Content Include="PersonCenter\Index1.aspx" />
+    <Content Include="PersonCenter\page\MyClass.aspx" />
+    <Content Include="PreLesson\Js\PageInit\IndexInit.js" />
+    <Content Include="PreLesson\Js\PageInit\PreLessonForTS2.js" />
+    <Content Include="PreLesson\Js\PageInit\PreLessonForTSInit.js" />
+    <Content Include="PreLesson\Js\PageInit\PreLessonPageInit2.js" />
+    <Content Include="PreLesson\Js\PageInit\Sortable.js" />
+    <Content Include="PreLesson\Page\PerLessonForTS2.aspx" />
+    <Content Include="PreLesson\Page\LessonViewPD.html" />
+    <Content Include="PreLesson\PreviewPage\Chinese\DoQuestion.js" />
+    <Content Include="PreLesson\PreviewPage\Chinese\QuestionModels.aspx" />
+    <Content Include="PreLesson\PreviewPage\Chinese\Y14.aspx" />
+    <Content Include="PreLesson\PreviewPage\Chinese\Y16.aspx" />
+    <Content Include="PreLesson\PreviewPage\Chinese\Y17.aspx" />
+    <Content Include="PreLesson\PreviewPage\Chinese\Y18.aspx" />
+    <Content Include="PreLesson\PreviewPage\Chinese\Y20.aspx" />
+    <Content Include="PreLesson\PreviewPage\Chinese\Y21.aspx" />
+    <Content Include="PreLesson\PreviewPage\Chinese\Y22.aspx" />
+    <Content Include="PreLesson\PreviewPage\Chinese\Y7.aspx" />
+    <Content Include="PreLesson\PreviewPage\Chinese\Y9.aspx" />
+    <Content Include="PreLesson\PreviewPage\English\M1.aspx" />
+    <Content Include="PreLesson\PreviewPage\English\M10.aspx" />
+    <Content Include="PreLesson\PreviewPage\English\M11.aspx" />
+    <Content Include="PreLesson\PreviewPage\English\M12.aspx" />
+    <Content Include="PreLesson\PreviewPage\English\M13.aspx" />
+    <Content Include="PreLesson\PreviewPage\English\M14.aspx" />
+    <Content Include="PreLesson\PreviewPage\English\M15.aspx" />
+    <Content Include="PreLesson\PreviewPage\English\M16.aspx" />
+    <Content Include="PreLesson\PreviewPage\English\M17.aspx" />
+    <Content Include="PreLesson\PreviewPage\English\M18.aspx" />
+    <Content Include="PreLesson\PreviewPage\English\M19.aspx" />
+    <Content Include="PreLesson\PreviewPage\English\M2.aspx" />
+    <Content Include="PreLesson\PreviewPage\English\M3.aspx" />
+    <Content Include="PreLesson\PreviewPage\English\M4.aspx" />
+    <Content Include="PreLesson\PreviewPage\English\M5.aspx" />
+    <Content Include="PreLesson\PreviewPage\English\M6.aspx" />
+    <Content Include="PreLesson\PreviewPage\English\M7.aspx" />
+    <Content Include="PreLesson\PreviewPage\English\M8.aspx" />
+    <Content Include="PreLesson\PreviewPage\English\M9.aspx" />
+    <Content Include="PreLesson\PreviewPage\English\QuestionModels.aspx" />
+    <Content Include="PreLesson\PreviewPage\Js\AmrPlayer.js" />
+    <Content Include="PreLesson\PreviewPage\Js\ChinesePlayer.js" />
+    <Content Include="PreLesson\PreviewPage\Js\Client.js" />
+    <Content Include="PreLesson\PreviewPage\English\DoQuestion.js" />
+    <Content Include="PreLesson\PreviewPage\Js\KingsunMp3Player.js" />
+    <Content Include="PreLesson\PreviewPage\Math\DoQuestion.js" />
+    <Content Include="PreLesson\PreviewPage\Math\QuestionModels.aspx" />
+    <Content Include="PreLesson\PreviewPage\Math\S12.aspx" />
+    <Content Include="PreLesson\PreviewPage\Math\S13.aspx" />
+    <Content Include="PreLesson\PreviewPage\Math\S15.aspx" />
+    <Content Include="PreLesson\PreviewPage\Math\S16.aspx" />
+    <Content Include="PreLesson\PreviewPage\Math\S18.aspx" />
+    <Content Include="PreLesson\PreviewPage\Math\S23.aspx" />
+    <Content Include="PreLesson\PreviewPage\Math\S24.aspx" />
+    <Content Include="PreLesson\PreviewPage\Math\S25.aspx" />
+    <Content Include="PreLesson\PreviewPage\Math\S7.aspx" />
+    <Content Include="PreLesson\PreviewPage\Math\S8.aspx" />
+    <Content Include="StudentCenter\js\HelpDB.js" />
+    <Content Include="StudentCenter\HelpCenter.aspx" />
+    <Content Include="数据库更新.txt" />
+    <None Include="Properties\PublishProfiles\dsaf.pubxml" />
+    <None Include="Properties\PublishProfiles\SmarterClassroom.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="PreLesson\Js\PageInit\PreLessonForJFInit.js" />
+    <Content Include="PreLesson\Page\PerLessonForJF.aspx" />
+    <Content Include="PreLesson\Page\PerLessonForTS.aspx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="PreLesson\Js\PageInit\LessonView.js" />
+    <Content Include="PreLesson\Js\PageInit\UserStandBookInit.js" />
+    <Content Include="PreLesson\Page\crossOriginAccess.html" />
+    <Content Include="PreLesson\Page\LessonView.html" />
+    <Content Include="PreLesson\Page\UserStandBook.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Theme\css\base.css" />
+    <Content Include="App_Theme\css\beike.css" />
+    <Content Include="App_Theme\css\dialog_skin.css" />
+    <Content Include="App_Theme\css\idangerous.swiper.css" />
+    <Content Include="App_Theme\css\page.css" />
+    <Content Include="App_Theme\css\solid.css" />
+    <Content Include="App_Theme\dialog\dialog-min.js" />
+    <Content Include="App_Theme\dialog\dialog-plus-min.js" />
+    <Content Include="App_Theme\dialog\dialog-plus.js" />
+    <Content Include="App_Theme\dialog\dialog.js" />
+    <Content Include="App_Theme\dialog\require.js" />
+    <Content Include="App_Theme\images\01.png" />
+    <Content Include="App_Theme\images\02.png" />
+    <Content Include="App_Theme\images\03.png" />
+    <Content Include="App_Theme\images\1.png" />
+    <Content Include="App_Theme\images\11.png" />
+    <Content Include="App_Theme\images\12.png" />
+    <Content Include="App_Theme\images\13.png" />
+    <Content Include="App_Theme\images\2.png" />
+    <Content Include="App_Theme\images\3.png" />
+    <Content Include="App_Theme\images\back.png" />
+    <Content Include="App_Theme\images\bg.gif" />
+    <Content Include="App_Theme\images\book01.jpg" />
+    <Content Include="App_Theme\images\borderRadius.png" />
+    <Content Include="App_Theme\images\borderRadiusBottom.png" />
+    <Content Include="App_Theme\images\btnBack.gif" />
+    <Content Include="App_Theme\images\btnIco.png" />
+    <Content Include="App_Theme\images\btnNext.gif" />
+    <Content Include="App_Theme\images\btnNext.png" />
+    <Content Include="App_Theme\images\btnPrev.gif" />
+    <Content Include="App_Theme\images\btnPrev.png" />
+    <Content Include="App_Theme\images\close-20.png" />
+    <Content Include="App_Theme\images\close-demo.gif" />
+    <Content Include="App_Theme\images\close.png" />
+    <Content Include="App_Theme\images\cover1.png" />
+    <Content Include="App_Theme\images\cover2.png" />
+    <Content Include="App_Theme\images\downlist.png" />
+    <Content Include="App_Theme\images\head1.png" />
+    <Content Include="App_Theme\images\head2.png" />
+    <Content Include="App_Theme\images\hide.png" />
+    <Content Include="App_Theme\images\liIcon.png" />
+    <Content Include="App_Theme\images\liIcon2.png" />
+    <Content Include="App_Theme\images\pageList.png" />
+    <Content Include="App_Theme\images\pageList_hover.png" />
+    <Content Include="App_Theme\images\PENCIL06.ICO" />
+    <Content Include="App_Theme\images\search.png" />
+    <Content Include="App_Theme\images\show.png" />
+    <Content Include="App_Theme\js\common.js" />
+    <Content Include="App_Theme\js\config.js" />
+    <Content Include="App_Theme\js\db.js" />
+    <Content Include="App_Theme\js\Drag.js" />
+    <Content Include="App_Theme\js\dragElement.js" />
+    <Content Include="App_Theme\js\dragItem.js" />
+    <Content Include="App_Theme\js\idangerous.swiper.js" />
+    <Content Include="App_Theme\js\idangerous.swiper.min.js" />
+    <Content Include="App_Theme\js\iframe.js" />
+    <Content Include="App_Theme\js\javaDrag.js" />
+    <Content Include="App_Theme\js\jquery-1.10.2.min.js" />
+    <Content Include="App_Theme\js\jquery.cookie.js" />
+    <Content Include="App_Theme\js\jquery.form.controls.js" />
+    <Content Include="App_Theme\js\json2.js" />
+    <Content Include="App_Theme\js\Kingsun.Select.js" />
+    <Content Include="App_Theme\js\painter.js" />
+    <Content Include="App_Theme\js\resource.js" />
+    <Content Include="App_Theme\js\spotlight.js" />
+    <Content Include="App_Theme\js\tab.js" />
+    <Content Include="App_Theme\js\teacher.js" />
+    <Content Include="App_Theme\js\testDb.js" />
+    <Content Include="CommonJs\jquery\jquery-1.10.2.min.js" />
+    <Content Include="CommonJs\jquery\jquery-1.11.2.min.js" />
+    <Content Include="PreLesson\Js\Management\PreLessonManagement.js" />
+    <Content Include="PreLesson\Js\PageInit\AddStandBookInit.js" />
+    <Content Include="PreLesson\Js\PageInit\PreLessonPageInit.js" />
+    <Content Include="PreLesson\Js\PageInit\PreLessonResourceInit.js" />
+    <Content Include="PreLesson\Js\PageInit\PreviewInit.js" />
+    <Content Include="PreLesson\Js\PageInit\resource.js" />
+    <Content Include="PreLesson\Page\AddStandBook.aspx" />
+    <Content Include="PreLesson\Page\PreLesson.aspx" />
+    <Content Include="setup.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttLesson\Page\Preview.aspx.cs">
+      <DependentUpon>Preview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttLesson\Page\Preview.aspx.designer.cs">
+      <DependentUpon>Preview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AttLesson\Page\SelectBook.aspx.cs">
+      <DependentUpon>SelectBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttLesson\Page\SelectBook.aspx.designer.cs">
+      <DependentUpon>SelectBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AttLesson\Page\Teaching.aspx.cs">
+      <DependentUpon>Teaching.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttLesson\Page\Teaching.aspx.designer.cs">
+      <DependentUpon>Teaching.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AttLesson\Page\TeachingTS.aspx.cs">
+      <DependentUpon>TeachingTS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttLesson\Page\TeachingTS.aspx.designer.cs">
+      <DependentUpon>TeachingTS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AttLesson\Page\TeachingTS2.aspx.cs">
+      <DependentUpon>TeachingTS2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttLesson\Page\TeachingTS2.aspx.designer.cs">
+      <DependentUpon>TeachingTS2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonPage\Page\Head.ascx.cs">
+      <DependentUpon>Head.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonPage\Page\Head.ascx.designer.cs">
+      <DependentUpon>Head.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonPage\Page\ResourcePreview.aspx.cs">
+      <DependentUpon>ResourcePreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonPage\Page\ResourcePreview.aspx.designer.cs">
+      <DependentUpon>ResourcePreview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultW.aspx.cs">
+      <DependentUpon>DefaultW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultW.aspx.designer.cs">
+      <DependentUpon>DefaultW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\Handler.ashx.cs">
+      <DependentUpon>Handler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login1.aspx.cs">
+      <DependentUpon>Login1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login1.aspx.designer.cs">
+      <DependentUpon>Login1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonCenter\page\ChangePswd.aspx.cs">
+      <DependentUpon>ChangePswd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonCenter\page\ChangePswd.aspx.designer.cs">
+      <DependentUpon>ChangePswd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonCenter\page\ClassInfo.aspx.cs">
+      <DependentUpon>ClassInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonCenter\page\ClassInfo.aspx.designer.cs">
+      <DependentUpon>ClassInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonCenter\page\HelpCenter.aspx.cs">
+      <DependentUpon>HelpCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonCenter\page\HelpCenter.aspx.designer.cs">
+      <DependentUpon>HelpCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonCenter\Index1.aspx.cs">
+      <DependentUpon>Index1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonCenter\Index1.aspx.designer.cs">
+      <DependentUpon>Index1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonCenter\page\MyClass.aspx.cs">
+      <DependentUpon>MyClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonCenter\page\MyClass.aspx.designer.cs">
+      <DependentUpon>MyClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\Page\AddStandBook.aspx.cs">
+      <DependentUpon>AddStandBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\Page\AddStandBook.aspx.designer.cs">
+      <DependentUpon>AddStandBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\Page\PerLessonForJF.aspx.cs">
+      <DependentUpon>PerLessonForJF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\Page\PerLessonForJF.aspx.designer.cs">
+      <DependentUpon>PerLessonForJF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\Page\PerLessonForTS.aspx.cs">
+      <DependentUpon>PerLessonForTS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\Page\PerLessonForTS.aspx.designer.cs">
+      <DependentUpon>PerLessonForTS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\Page\PerLessonForTS2.aspx.cs">
+      <DependentUpon>PerLessonForTS2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\Page\PerLessonForTS2.aspx.designer.cs">
+      <DependentUpon>PerLessonForTS2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\Page\PreLesson.aspx.cs">
+      <DependentUpon>PreLesson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\Page\PreLesson.aspx.designer.cs">
+      <DependentUpon>PreLesson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\Page\UserStandBook.aspx.cs">
+      <DependentUpon>UserStandBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\Page\UserStandBook.aspx.designer.cs">
+      <DependentUpon>UserStandBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Chinese\QuestionModels.aspx.cs">
+      <DependentUpon>QuestionModels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Chinese\QuestionModels.aspx.designer.cs">
+      <DependentUpon>QuestionModels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Chinese\Y14.aspx.cs">
+      <DependentUpon>Y14.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Chinese\Y14.aspx.designer.cs">
+      <DependentUpon>Y14.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Chinese\Y16.aspx.cs">
+      <DependentUpon>Y16.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Chinese\Y16.aspx.designer.cs">
+      <DependentUpon>Y16.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Chinese\Y17.aspx.cs">
+      <DependentUpon>Y17.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Chinese\Y17.aspx.designer.cs">
+      <DependentUpon>Y17.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Chinese\Y18.aspx.cs">
+      <DependentUpon>Y18.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Chinese\Y18.aspx.designer.cs">
+      <DependentUpon>Y18.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Chinese\Y20.aspx.cs">
+      <DependentUpon>Y20.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Chinese\Y20.aspx.designer.cs">
+      <DependentUpon>Y20.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Chinese\Y21.aspx.cs">
+      <DependentUpon>Y21.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Chinese\Y21.aspx.designer.cs">
+      <DependentUpon>Y21.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Chinese\Y22.aspx.cs">
+      <DependentUpon>Y22.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Chinese\Y22.aspx.designer.cs">
+      <DependentUpon>Y22.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Chinese\Y7.aspx.cs">
+      <DependentUpon>Y7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Chinese\Y7.aspx.designer.cs">
+      <DependentUpon>Y7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Chinese\Y9.aspx.cs">
+      <DependentUpon>Y9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Chinese\Y9.aspx.designer.cs">
+      <DependentUpon>Y9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M1.aspx.cs">
+      <DependentUpon>M1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M1.aspx.designer.cs">
+      <DependentUpon>M1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M10.aspx.cs">
+      <DependentUpon>M10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M10.aspx.designer.cs">
+      <DependentUpon>M10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M11.aspx.cs">
+      <DependentUpon>M11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M11.aspx.designer.cs">
+      <DependentUpon>M11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M12.aspx.cs">
+      <DependentUpon>M12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M12.aspx.designer.cs">
+      <DependentUpon>M12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M13.aspx.cs">
+      <DependentUpon>M13.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M13.aspx.designer.cs">
+      <DependentUpon>M13.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M14.aspx.cs">
+      <DependentUpon>M14.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M14.aspx.designer.cs">
+      <DependentUpon>M14.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M15.aspx.cs">
+      <DependentUpon>M15.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M15.aspx.designer.cs">
+      <DependentUpon>M15.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M16.aspx.cs">
+      <DependentUpon>M16.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M16.aspx.designer.cs">
+      <DependentUpon>M16.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M17.aspx.cs">
+      <DependentUpon>M17.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M17.aspx.designer.cs">
+      <DependentUpon>M17.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M18.aspx.cs">
+      <DependentUpon>M18.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M18.aspx.designer.cs">
+      <DependentUpon>M18.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M19.aspx.cs">
+      <DependentUpon>M19.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M19.aspx.designer.cs">
+      <DependentUpon>M19.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M2.aspx.cs">
+      <DependentUpon>M2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M2.aspx.designer.cs">
+      <DependentUpon>M2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M3.aspx.cs">
+      <DependentUpon>M3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M3.aspx.designer.cs">
+      <DependentUpon>M3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M4.aspx.cs">
+      <DependentUpon>M4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M4.aspx.designer.cs">
+      <DependentUpon>M4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M5.aspx.cs">
+      <DependentUpon>M5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M5.aspx.designer.cs">
+      <DependentUpon>M5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M6.aspx.cs">
+      <DependentUpon>M6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M6.aspx.designer.cs">
+      <DependentUpon>M6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M7.aspx.cs">
+      <DependentUpon>M7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M7.aspx.designer.cs">
+      <DependentUpon>M7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M8.aspx.cs">
+      <DependentUpon>M8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M8.aspx.designer.cs">
+      <DependentUpon>M8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M9.aspx.cs">
+      <DependentUpon>M9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\M9.aspx.designer.cs">
+      <DependentUpon>M9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\QuestionModels.aspx.cs">
+      <DependentUpon>QuestionModels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\English\QuestionModels.aspx.designer.cs">
+      <DependentUpon>QuestionModels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Math\QuestionModels.aspx.cs">
+      <DependentUpon>QuestionModels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Math\QuestionModels.aspx.designer.cs">
+      <DependentUpon>QuestionModels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Math\S12.aspx.cs">
+      <DependentUpon>S12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Math\S12.aspx.designer.cs">
+      <DependentUpon>S12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Math\S13.aspx.cs">
+      <DependentUpon>S13.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Math\S13.aspx.designer.cs">
+      <DependentUpon>S13.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Math\S15.aspx.cs">
+      <DependentUpon>S15.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Math\S15.aspx.designer.cs">
+      <DependentUpon>S15.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Math\S16.aspx.cs">
+      <DependentUpon>S16.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Math\S16.aspx.designer.cs">
+      <DependentUpon>S16.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Math\S18.aspx.cs">
+      <DependentUpon>S18.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Math\S18.aspx.designer.cs">
+      <DependentUpon>S18.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Math\S23.aspx.cs">
+      <DependentUpon>S23.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Math\S23.aspx.designer.cs">
+      <DependentUpon>S23.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Math\S24.aspx.cs">
+      <DependentUpon>S24.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Math\S24.aspx.designer.cs">
+      <DependentUpon>S24.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Math\S25.aspx.cs">
+      <DependentUpon>S25.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Math\S25.aspx.designer.cs">
+      <DependentUpon>S25.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Math\S7.aspx.cs">
+      <DependentUpon>S7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Math\S7.aspx.designer.cs">
+      <DependentUpon>S7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Math\S8.aspx.cs">
+      <DependentUpon>S8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreLesson\PreviewPage\Math\S8.aspx.designer.cs">
+      <DependentUpon>S8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="StudentCenter\HelpCenter.aspx.cs">
+      <DependentUpon>HelpCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentCenter\HelpCenter.aspx.designer.cs">
+      <DependentUpon>HelpCenter.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kingsun.SmarterClassroom.BLL\Kingsun.SmarterClassroom.BLL.csproj">
+      <Project>{127a2fef-8195-4081-8987-aef498425c06}</Project>
+      <Name>Kingsun.SmarterClassroom.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kingsun.SmarterClassroom.Com\Kingsun.SmarterClassroom.Com.csproj">
+      <Project>{29161d64-7ce4-4b4b-be1d-38fa64a9d4f5}</Project>
+      <Name>Kingsun.SmarterClassroom.Com</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kingsun.SmarterClassroom.Mod\Kingsun.SmarterClassroom.Mod.csproj">
+      <Project>{54d40ced-55f8-4821-9516-2465faa80d6c}</Project>
+      <Name>Kingsun.SmarterClassroom.Mod</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resource\activeMov\Listen and say\" />
+    <Folder Include="Setup\" />
+    <Folder Include="StudentCenter\img\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>32801</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:32801/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此项目引用这台计算机上缺少的 NuGet 程序包。使用 NuGet 程序包还原可下载这些程序包。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

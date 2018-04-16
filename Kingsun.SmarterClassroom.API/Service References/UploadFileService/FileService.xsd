@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.3.2:8020/FileService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Fz.Core.WcfService.Contracts" />
+  <xs:element name="GetFileByFileID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FileID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFileByFileIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Fz.Core.WcfService.Contracts" minOccurs="0" name="GetFileByFileIDResult" nillable="true" type="q1:R_File" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateFileWH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Fz.Core.WcfService.Contracts" minOccurs="0" name="file" nillable="true" type="q2:R_File" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateFileWHResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadFileFromClassRoom">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Filedata" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadFileFromClassRoomResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UploadFileFromClassRoomResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

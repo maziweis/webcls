@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="reamd">
+    <title>crossOriginAccess 2018-02 by reamd</title>
+</head>
+<body>
+<script>
+  (function () {
+    function getQuery (name) {
+      var reg = new RegExp("(?:^|&)"+ name +"=([^&]*)(?:&|$)");
+      var res = window.location.search.substr(1).match(reg);
+      if(res !== null){
+        return  decodeURIComponent(res[1]);
+      }
+      return null;
+    }
+    function getParamObj(str) {
+      var arr = ['title', 'type', 'isSend', 'isCommit'];
+      var obj = {};
+      var getParam = function(strParam, name) {
+        var reg = new RegExp("(?:^|,)"+ name +":([^,]*)(?:,|$)");
+        let res = strParam.match(reg);
+        if(res !== null){
+          return  res[1];
+        }
+        return null;
+      };
+      arr.forEach(function (item) {
+        obj[item] = getParam(str, item);
+      });
+      return obj;
+    }
+    var data = getQuery('data');
+    var message = data && getParamObj(data);
+    window.parent.parent.postMessage({
+      fName: 'getConfig_n',
+      cbId: 'getConfig_n',
+      message: message
+    }, '*');
+  })();
+</script>
+</body>
+</html>

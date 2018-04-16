@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Fz.Core.WcfService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Fz.Core.WcfService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="C_UserInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Account" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Subject" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Type" type="xs:int" />
+      <xs:element minOccurs="0" name="userClass" nillable="true" type="tns:ArrayOfC_UserClass" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="C_UserInfo" nillable="true" type="tns:C_UserInfo" />
+  <xs:complexType name="ArrayOfC_UserClass">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="C_UserClass" nillable="true" type="tns:C_UserClass" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfC_UserClass" nillable="true" type="tns:ArrayOfC_UserClass" />
+  <xs:complexType name="C_UserClass">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClassId" type="xs:int" />
+      <xs:element minOccurs="0" name="ClassName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GradeId" type="xs:int" />
+      <xs:element minOccurs="0" name="GradeName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="C_UserClass" nillable="true" type="tns:C_UserClass" />
+  <xs:complexType name="C_Textbook">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BookConfig" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BookCover" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BookName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Booklet" type="xs:int" />
+      <xs:element minOccurs="0" name="Edition" type="xs:int" />
+      <xs:element minOccurs="0" name="Grade" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Stage" type="xs:int" />
+      <xs:element minOccurs="0" name="Subject" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="C_Textbook" nillable="true" type="tns:C_Textbook" />
+  <xs:complexType name="ArrayOfC_Textbook">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="C_Textbook" nillable="true" type="tns:C_Textbook" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfC_Textbook" nillable="true" type="tns:ArrayOfC_Textbook" />
+  <xs:complexType name="ArrayOfC_TextbookCatalog">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="C_TextbookCatalog" nillable="true" type="tns:C_TextbookCatalog" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfC_TextbookCatalog" nillable="true" type="tns:ArrayOfC_TextbookCatalog" />
+  <xs:complexType name="C_TextbookCatalog">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="PageEnd" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="PageStart" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="C_TextbookCatalog" nillable="true" type="tns:C_TextbookCatalog" />
+</xs:schema>

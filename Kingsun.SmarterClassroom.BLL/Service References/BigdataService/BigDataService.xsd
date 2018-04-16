@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Fz.BigData.WCF" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Fz.BigData.WCF" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="SyLogMonitorAdd">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActionName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ControllerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateIp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreateUserId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateUserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HttpMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RenderTime" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ResponseTime" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SyLogMonitorAdd" nillable="true" type="tns:SyLogMonitorAdd" />
+  <xs:complexType name="ArrayOfSyLogMonitorList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SyLogMonitorList" nillable="true" type="tns:SyLogMonitorList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSyLogMonitorList" nillable="true" type="tns:ArrayOfSyLogMonitorList" />
+  <xs:complexType name="SyLogMonitorList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActionName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ControllerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateIp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreateUserId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateUserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DType" type="xs:int" />
+      <xs:element minOccurs="0" name="HttpMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RenderTime" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ResponseTime" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TotalTime" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SyLogMonitorList" nillable="true" type="tns:SyLogMonitorList" />
+  <xs:complexType name="SyLogErrorAdd">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActionName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ControllerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateIp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreateUserId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateUserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HttpMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SyLogErrorAdd" nillable="true" type="tns:SyLogErrorAdd" />
+  <xs:complexType name="ArrayOfSyLogErrorList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SyLogErrorList" nillable="true" type="tns:SyLogErrorList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSyLogErrorList" nillable="true" type="tns:ArrayOfSyLogErrorList" />
+  <xs:complexType name="SyLogErrorList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActionName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ControllerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateIp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreateUserId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateUserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DType" type="xs:int" />
+      <xs:element minOccurs="0" name="HttpMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SyLogErrorList" nillable="true" type="tns:SyLogErrorList" />
+  <xs:complexType name="ArrayOfRoomLogList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RoomLogList" nillable="true" type="tns:RoomLogList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRoomLogList" nillable="true" type="tns:ArrayOfRoomLogList" />
+  <xs:complexType name="RoomLogList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreateUserId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateUserType" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OperContent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OperId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RoomLogList" nillable="true" type="tns:RoomLogList" />
+</xs:schema>

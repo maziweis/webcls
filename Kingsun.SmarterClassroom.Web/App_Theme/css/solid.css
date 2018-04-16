@@ -1,0 +1,135 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/* Demo Syles */
+body {margin: 0;font-family: Arial, Helvetica, sans-serif,"微软雅黑";font-size: 13px;/*line-height: 1.5;*/}
+html,body{/*background:url(../images/bg-01.gif);*/}
+/*顶部工具栏*/
+.topTools{width:100%;height:0px;font-size:0; position:relative;top:0;left:0;}
+.topTools a:link,.topTools a:visited{ position:fixed;right:0;top:0;display:block;width:36px;height:32px; z-index:1000;}
+.topTools a.btnMin:link{ background:url(../images/btnwin.png) no-repeat left top;right:40px;}
+.topTools a.btnMin:hover{ background:url(../images/btnwin.png) no-repeat left -70px;}
+.topTools a.btnClose:link{ background:url(../images/btnwin.png) no-repeat left -34px;}
+.topTools a.btnClose:hover{ background:url(../images/btnwin.png) no-repeat left -104px;}
+/*底部工具栏*/
+.botTools{width:100%;height:80px;font-size:0;position:relative;bottom:0;left:0;z-index:999;}
+.botTools a:link,.botTools a:visited{ position:absolute;right:0;top:-40px;display:block;width:36px;height:36px; z-index:1000;}
+.botTools a.btnPrev:link{ background:url(../images/pageLeft.png) no-repeat left top;left:10px;top:10px; background-size:contain;}
+.botTools a.btnPrev:hover{ background:url(../images/pageLeft_hover.png) no-repeat left top;background-size:contain;}
+.botTools a.btnBack:link{ background:#fff url(../images/pageList.png) no-repeat center top;left:48%;top:-50px;background-size:contain;padding:0 10px;}
+.botTools a.btnBack:hover{ background:#fff url(../images/pageList_hover.png) no-repeat center top;background-size:contain;}
+.botTools a.btnNext:link{ background:url(../images/pageRight.png) no-repeat left top;right:10px;top:10px;background-size:contain;}
+.botTools a.btnNext:hover{ background:url(../images/pageRight_hover.png) no-repeat left top;background-size:contain;}
+
+/*划屏控件样式*/
+.device {width: 1016px;height: 700px;padding: 20px 20px;border-radius: 0px;background: #fff;border: 0px solid #21B7B5;margin: 40px auto 0;position: relative;-moz-box-shadow:0px 0px 15px #ccc;-webkit-box-shadow:0px 0px 15px #ccc; box-shadow:0px 0px 15px #ccc;}
+.device .arrow-left {/*background: url(../images/btnPrev.gif)  no-repeat left top;*/position: absolute;/*left: 5px;top: 50%;margin-top: -15px;*/left:0;top:0;width:40px;height: 100%;z-index:3;}
+.device .arrow-right {/*background: url(../images/btnNext.gif)  no-repeat left bottom;*/position: absolute;/*right: 5px;top: 50%;margin-top: -15px;*/right:0;top:0;width:40px;height: 100%;z-index:3;}
+/*.arrow-left.restCss{bottom:20px;top:auto;}
+.arrow-right.restCss{bottom:20px;top:auto;}*/
+.swiper-container {height: 700px;width:1016px; z-index:2;}
+.content-slide {padding:0px;color: #000;width:100%;height:100%;position:relative;}
+.title {font-size: 25px;margin-bottom: 10px;}
+.pagination {position: absolute;left: 0;text-align: center;bottom:5px;width: 100%;}
+.swiper-pagination-switch {display: inline-block;width: 10px;height: 10px;border-radius: 10px;background: #999;box-shadow: 0px 1px 2px #555 inset;margin: 0 3px;cursor: pointer;}
+.swiper-active-switch {background: #fff;}
+.inbox{width:498px;height:700px;margin:0px auto;position:relative;background:url(../images/bg03.gif) no-repeat center top; background-size:contain;}
+.doubleInbox{width:498px;height:700px;/*background:url(../images/bg03.gif) no-repeat center top;*/ background-size:contain;/*float:left;position:relative;*/position:absolute;background-repeat: no-repeat;}
+.btn{position:absolute;display:block;font-size:14px; font-family:Verdana;color:#fff; text-decoration:none; text-align:left;z-index:9999;border:1px red solid;}
+.tools{width:880px;height:1px;margin:0px auto; position:relative;}
+.btnBack{position:absolute;right:-20px;top:-60px;width:36px;height:36px;background:url(../images/btnBack.gif) no-repeat left top; z-index:999;}
+
+/*目录列表*/
+.listbox{border:2px #007bc8 solid;overflow:hidden;padding:0;}
+.listTit{font-size:80px;color:#0480D0;height:100px;line-height:100px;margin:0;}
+.listbox h2{height:40px;line-height:40px;background:#007bc8;color:#fff;font-size:20px;text-align:center;padding-left:10px;margin:0;}
+.listbox table{margin-top:0;width:100%;text-align:left;border-collapse:collapse;float:left;}
+.listbox table th{height:40px;line-height:40px;background:#fbce8a;text-align:left;border:1px #fff solid;padding-left:10px;font-size:16px;font-weight:bold;}
+.listbox table td{border:1px #fff solid;height:34px;line-height:34px;padding-left:10px;font-size:16px;color:#333; cursor:pointer;}
+.listbox table td b{color:#f0842c;}
+.c1{width:280px;}
+.c2{width:150px;}
+.c3{width:20px; text-align:right;}
+.c4{width:200px;}
+.c5{width:120px;}
+.listimg{padding-top:100px;margin:0 auto;width:655px;}
+
+/*目录列表*/
+.listbox1{overflow:hidden;padding:0;margin-bottom:0px;margin-right:10px;}
+.listTit1{min-height:40px;margin:0;overflow:hidden;padding:0 20px; text-align:center;margin-top:10px;}
+.listbox1 h2{height:30px;line-height:30px;text-align:left;padding-left:10px;margin:0;color:#176FC0;font-size:20px;font-weight:bold; font-family:Tahoma;margin-bottom:5px;}
+.listbox1 h2.dotbg{background:url(../images/dotline.gif) repeat-x 0 center;padding-left:0;}
+.listbox1 h2 a:link,.listbox1 h2 a:visited{float:left; text-decoration:none;color:#176FC0; background:#fff;padding-left:10px;padding-right:10px;}
+.listbox1 h2 a:hover{color:orange;}
+.listbox1 h2 b{color:#D11F27;font-size:28px;font-weight:bold;}
+.listbox1 h2 span{float:right;font-size:14px;color:#333;font-weight:normal;width:30px; text-align:right;background:#fff;}
+.listbox1 table{margin-top:0;width:100%;text-align:left;border-collapse:collapse;float:left;}
+.listbox1 table th{height:22px;line-height:22px;background:#fbce8a;text-align:left;border:0px #fff solid;padding-left:10px;font-size:16px;font-weight:bold;}
+.listbox1 table td{border:0px #fff solid;height:20px;line-height:20px;padding-left:10px;font-size:14px;color:#333;}
+.listbox1 table td b{color:#f0842c;}
+.withdot{background:url(../images/dotline.gif) repeat-x 0 center;width:100%;}
+.withdot a:link,.withdot a:visited{display:inline-block;padding:0px 10px 0px 0;color:#176FC0;font-size:16px;font-weight:bold; text-decoration:none; background:#fff;}
+.withdot a:hover{color:orange;}
+.listfoot1,.listfoot2{overflow:hidden;padding:0 20px;}
+.listBack{ position:relative;width:100%;}
+.listBack a:link,.listBack a:visited{ position:absolute;right:20px;top:20px;width:36px;height:36px;line-height:40px; background:url(../images/btnBack.gif) no-repeat left top; z-index:1000; text-align:right; text-decoration:none;font-size:20px;color:#327FC7;font-weight:bold;}
+.listBack a:hover{color:#F99515;}
+/*红色皮肤*/
+#skinRed .listTit{font-size:50px;color:#D3222A;height:60px;line-height:60px;}
+#skinRed .listbox{border:2px #D3222A solid;}
+#skinRed .listbox h2{background:#D3222A;margin:0;}
+#skinRed .listimg{padding-top:50px;}
+#skinRed .listbox table th{height:35px;line-height:35px;}
+#skinRed .listbox table td{height:30px;line-height:30px;}
+#skinRed .listbox table{margin-top:0;}
+
+/*水晶按钮-动画*/
+a.imgbtn1:link,a.imgbtn1:visited{display:block;width:30px;height:55px;background:url(../images/imgbtn1.png) no-repeat left top;overflow:hidden; position:absolute;left:1020px;top:320px; z-index:9999; background-size:contain;}
+a.imgbtn1:hover{background:url(../images/imgbtn1_hover.png) no-repeat left top;background-size:contain;}
+
+/*水晶按钮-课件*/
+a.imgbtn2:link,a.imgbtn2:visited{display:block;width:30px;height:55px;background:url(../images/imgbtn2.png) no-repeat left top;overflow:hidden; position:absolute;left:960px;top:320px; z-index:9999;background-size:contain;}
+a.imgbtn2:hover{background:url(../images/imgbtn2_hover.png) no-repeat left top;background-size:contain;}
+
+
+/*水晶按钮-练习*/
+a.imgbtn3:link,a.imgbtn3:visited{display:block;width:30px;height:55px;background:url(../images/imgbtn3.png) no-repeat left top;overflow:hidden; position:absolute;left:960px;top:320px; z-index:9999;background-size:contain;}
+a.imgbtn3:hover{background:url(../images/imgbtn3_hover.png) no-repeat left top;background-size:contain;}
+
+/*水晶按钮-朗读*/
+a.imgbtn4:link,a.imgbtn4:visited{display:block;width:30px;height:55px;background:url(../images/imgbtn4.png) no-repeat left top;overflow:hidden; position:absolute;left:890px;top:320px; z-index:9999;background-size:contain;}
+a.imgbtn4:hover{background:url(../images/imgbtn4_hover.png) no-repeat left top;background-size:contain;}
+
+/*水晶按钮-歌谣*/
+a.imgbtn5:link,a.imgbtn5:visited{display:block;width:30px;height:55px;background:url(../images/imgbtn5.png) no-repeat left top;overflow:hidden; position:absolute;left:890px;top:320px; z-index:9999;background-size:contain;}
+a.imgbtn5:hover{background:url(../images/imgbtn5_hover.png) no-repeat left top;background-size:contain;}
+
+/*前言页*/
+.columnBox{width:100%; text-align:center;}
+.introbox{width:600px;padding-top:50px;position:relative; background:#FFFFFF;padding:50px 20px 20px;margin:20px auto;
+-moz-box-shadow:0px 0px 10px rgba(0, 102, 204, .5);
+-webkit-box-shadow:0px 0px 10px rgba(0, 102, 204, .5); 
+box-shadow:0px 0px 10px rgba(0, 102, 204, .5);
+}
+.outline{border:2px #c79143 solid;}
+.inline{border:12px #fac358 solid;margin:12px;}
+.headImg{width:86px;height:91px; background:url(../images/introBg.jpg) no-repeat left top; position:absolute;top:6px;left:45%;}
+.introcontent{margin:20px;line-height:26px;}
+.introcontent h3{font-size:36px; text-align:center;height:24px;line-height:24px; font-weight:bold;}
+.introcontent p{line-height:20px;margin-top:0px;font-size:12px; text-indent:2em; text-align:left;}
+
+.introTools{width:100%;height:0px;font-size:0;position:relative;left:0;top:0;}
+.introTools a:link,.introTools a:visited{ position:absolute;right:0;top:0;display:block;width:36px;height:36px; z-index:1000;}
+.introTools a.btnPrev:link{ background:url(../images/pageLeft.png) no-repeat left top;left:10px;top:10px; background-size:contain;}
+.introTools a.btnPrev:hover{ background:url(../images/pageLeft_hover.png) no-repeat left top;background-size:contain;}
+.introTools a.btnNext:link{ background:url(../images/pageRight.png) no-repeat left top;right:10px;top:10px;background-size:contain;}
+.introTools a.btnNext:hover{ background:url(../images/pageRight_hover.png) no-repeat left top;background-size:contain;}
+
+
+/*首页*/
+.bookwraper{width:100%;}
+.bookwraper a{display:block;width:498px;height:700px;margin:40px auto;
+-moz-box-shadow:0px 0px 10px rgba(0, 102, 204, .5);
+-webkit-box-shadow:0px 0px 10px rgba(0, 102, 204, .5); 
+box-shadow:0px 0px 10px rgba(0, 102, 204, .5);
+}
+.bookwraper a img{float:left;}

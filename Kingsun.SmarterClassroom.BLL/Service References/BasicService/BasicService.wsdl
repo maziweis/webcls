@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BasicService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.3.190:8019/BasicService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.3.190:8019/BasicService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.3.190:8019/BasicService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Fz.Core.WcfService" />
+      <xsd:import schemaLocation="http://192.168.3.190:8019/BasicService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://192.168.3.190:8019/BasicService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Fz.Core.WcfService.Contracts" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IBasicService_CheckLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckLogin" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_CheckLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetUserInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetUserInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAccount" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetUserAndSubjectDict_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserAndSubjectDict" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetUserAndSubjectDict_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserAndSubjectDictResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetSubjectDict_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubjectDict" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetSubjectDict_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubjectDictResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetGradeDict_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGradeDict" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetGradeDict_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGradeDictResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetGradeDictByEdition_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGradeDictByEdition" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetGradeDictByEdition_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGradeDictByEditionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetClassDict_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassDict" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetClassDict_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassDictResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetTextbookById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTextbookById" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetTextbookById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTextbookByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetTextbookDict_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTextbookDict" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetTextbookDict_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTextbookDictResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetTextbookCatalogDict_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTextbookCatalogDict" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetTextbookCatalogDict_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTextbookCatalogDictResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetTextbookPageDict_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTextbookPageDict" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetTextbookPageDict_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTextbookPageDictResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_SaveTextbookResource_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveTextbookResource" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_SaveTextbookResource_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveTextbookResourceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetTextbookResource_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTextbookResource" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetTextbookResource_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTextbookResourceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetEditionDict_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEditionDict" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetEditionDict_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEditionDictResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetEditionDictBySubject_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEditionDictBySubject" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetEditionDictBySubject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEditionDictBySubjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetResourceType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetResourceType" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetResourceType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetResourceTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_UpdateTextbook_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTextbook" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_UpdateTextbook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTextbookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetResourceByCatalogIds_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetResourceByCatalogIds" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetResourceByCatalogIds_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetResourceByCatalogIdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetResourceByKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetResourceByKey" />
+  </wsdl:message>
+  <wsdl:message name="IBasicService_GetResourceByKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetResourceByKeyResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IBasicService">
+    <wsdl:operation name="CheckLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicService/CheckLogin" message="tns:IBasicService_CheckLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicService/CheckLoginResponse" message="tns:IBasicService_CheckLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicService/GetUserInfo" message="tns:IBasicService_GetUserInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicService/GetUserInfoResponse" message="tns:IBasicService_GetUserInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicService/GetAccount" message="tns:IBasicService_GetAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicService/GetAccountResponse" message="tns:IBasicService_GetAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserAndSubjectDict">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicService/GetUserAndSubjectDict" message="tns:IBasicService_GetUserAndSubjectDict_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicService/GetUserAndSubjectDictResponse" message="tns:IBasicService_GetUserAndSubjectDict_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubjectDict">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicService/GetSubjectDict" message="tns:IBasicService_GetSubjectDict_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicService/GetSubjectDictResponse" message="tns:IBasicService_GetSubjectDict_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGradeDict">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicService/GetGradeDict" message="tns:IBasicService_GetGradeDict_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicService/GetGradeDictResponse" message="tns:IBasicService_GetGradeDict_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGradeDictByEdition">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicService/GetGradeDictByEdition" message="tns:IBasicService_GetGradeDictByEdition_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicService/GetGradeDictByEditionResponse" message="tns:IBasicService_GetGradeDictByEdition_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClassDict">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicService/GetClassDict" message="tns:IBasicService_GetClassDict_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicService/GetClassDictResponse" message="tns:IBasicService_GetClassDict_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTextbookById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicService/GetTextbookById" message="tns:IBasicService_GetTextbookById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicService/GetTextbookByIdResponse" message="tns:IBasicService_GetTextbookById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTextbookDict">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicService/GetTextbookDict" message="tns:IBasicService_GetTextbookDict_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicService/GetTextbookDictResponse" message="tns:IBasicService_GetTextbookDict_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTextbookCatalogDict">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicService/GetTextbookCatalogDict" message="tns:IBasicService_GetTextbookCatalogDict_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicService/GetTextbookCatalogDictResponse" message="tns:IBasicService_GetTextbookCatalogDict_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTextbookPageDict">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicService/GetTextbookPageDict" message="tns:IBasicService_GetTextbookPageDict_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicService/GetTextbookPageDictResponse" message="tns:IBasicService_GetTextbookPageDict_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveTextbookResource">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicService/SaveTextbookResource" message="tns:IBasicService_SaveTextbookResource_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicService/SaveTextbookResourceResponse" message="tns:IBasicService_SaveTextbookResource_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTextbookResource">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicService/GetTextbookResource" message="tns:IBasicService_GetTextbookResource_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicService/GetTextbookResourceResponse" message="tns:IBasicService_GetTextbookResource_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEditionDict">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicService/GetEditionDict" message="tns:IBasicService_GetEditionDict_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicService/GetEditionDictResponse" message="tns:IBasicService_GetEditionDict_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEditionDictBySubject">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicService/GetEditionDictBySubject" message="tns:IBasicService_GetEditionDictBySubject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicService/GetEditionDictBySubjectResponse" message="tns:IBasicService_GetEditionDictBySubject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResourceType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicService/GetResourceType" message="tns:IBasicService_GetResourceType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicService/GetResourceTypeResponse" message="tns:IBasicService_GetResourceType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTextbook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicService/UpdateTextbook" message="tns:IBasicService_UpdateTextbook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicService/UpdateTextbookResponse" message="tns:IBasicService_UpdateTextbook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResourceByCatalogIds">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicService/GetResourceByCatalogIds" message="tns:IBasicService_GetResourceByCatalogIds_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicService/GetResourceByCatalogIdsResponse" message="tns:IBasicService_GetResourceByCatalogIds_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResourceByKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasicService/GetResourceByKey" message="tns:IBasicService_GetResourceByKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasicService/GetResourceByKeyResponse" message="tns:IBasicService_GetResourceByKey_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IBasicService" type="tns:IBasicService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckLogin">
+      <soap:operation soapAction="http://tempuri.org/IBasicService/CheckLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfo">
+      <soap:operation soapAction="http://tempuri.org/IBasicService/GetUserInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccount">
+      <soap:operation soapAction="http://tempuri.org/IBasicService/GetAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserAndSubjectDict">
+      <soap:operation soapAction="http://tempuri.org/IBasicService/GetUserAndSubjectDict" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubjectDict">
+      <soap:operation soapAction="http://tempuri.org/IBasicService/GetSubjectDict" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGradeDict">
+      <soap:operation soapAction="http://tempuri.org/IBasicService/GetGradeDict" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGradeDictByEdition">
+      <soap:operation soapAction="http://tempuri.org/IBasicService/GetGradeDictByEdition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClassDict">
+      <soap:operation soapAction="http://tempuri.org/IBasicService/GetClassDict" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTextbookById">
+      <soap:operation soapAction="http://tempuri.org/IBasicService/GetTextbookById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTextbookDict">
+      <soap:operation soapAction="http://tempuri.org/IBasicService/GetTextbookDict" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTextbookCatalogDict">
+      <soap:operation soapAction="http://tempuri.org/IBasicService/GetTextbookCatalogDict" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTextbookPageDict">
+      <soap:operation soapAction="http://tempuri.org/IBasicService/GetTextbookPageDict" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveTextbookResource">
+      <soap:operation soapAction="http://tempuri.org/IBasicService/SaveTextbookResource" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTextbookResource">
+      <soap:operation soapAction="http://tempuri.org/IBasicService/GetTextbookResource" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEditionDict">
+      <soap:operation soapAction="http://tempuri.org/IBasicService/GetEditionDict" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEditionDictBySubject">
+      <soap:operation soapAction="http://tempuri.org/IBasicService/GetEditionDictBySubject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResourceType">
+      <soap:operation soapAction="http://tempuri.org/IBasicService/GetResourceType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTextbook">
+      <soap:operation soapAction="http://tempuri.org/IBasicService/UpdateTextbook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResourceByCatalogIds">
+      <soap:operation soapAction="http://tempuri.org/IBasicService/GetResourceByCatalogIds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResourceByKey">
+      <soap:operation soapAction="http://tempuri.org/IBasicService/GetResourceByKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BasicService">
+    <wsdl:port name="BasicHttpBinding_IBasicService" binding="tns:BasicHttpBinding_IBasicService">
+      <soap:address location="http://192.168.3.190:8019/BasicService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

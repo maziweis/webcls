@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="19d08262-f1c2-469a-a06a-466521e0eadd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.3.7:8027/BigDataService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BigDataService3.xsd" MetadataType="Schema" ID="3f8e26db-99e1-4580-9b14-26d42777fa92" SourceId="1" SourceUrl="http://192.168.3.7:8027/BigDataService.svc?xsd=xsd1" />
+    <MetadataFile FileName="BigDataService31.xsd" MetadataType="Schema" ID="28d5b910-d7b1-453e-a2cb-4a6979608d8b" SourceId="1" SourceUrl="http://192.168.3.7:8027/BigDataService.svc?xsd=xsd2" />
+    <MetadataFile FileName="BigDataService1.wsdl" MetadataType="Wsdl" ID="5dd1989e-2f30-45a8-ab2a-676acff8b86e" SourceId="1" SourceUrl="http://192.168.3.7:8027/BigDataService.svc?wsdl" />
+    <MetadataFile FileName="BigDataService1.disco" MetadataType="Disco" ID="ef9ba0d0-40c8-44ea-a224-59f645654a18" SourceId="1" SourceUrl="http://192.168.3.7:8027/BigDataService.svc?disco" />
+    <MetadataFile FileName="BigDataService32.xsd" MetadataType="Schema" ID="636a66dd-4d47-4bd9-b288-325ecec8ec66" SourceId="1" SourceUrl="http://192.168.3.7:8027/BigDataService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

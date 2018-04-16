@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8477e333-249c-414b-8cee-9d4d7a5fccb1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.3.2:8020/FileService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="FileService.wsdl" MetadataType="Wsdl" ID="346f494e-418f-4a56-a792-240b8fccddcd" SourceId="1" SourceUrl="http://192.168.3.2:8020/FileService.svc?wsdl" />
+    <MetadataFile FileName="FileService.xsd" MetadataType="Schema" ID="b63b3341-e8d1-4090-bfa2-c2b7a4475dc9" SourceId="1" SourceUrl="http://192.168.3.2:8020/FileService.svc?xsd=xsd0" />
+    <MetadataFile FileName="FileService1.xsd" MetadataType="Schema" ID="0f2dd77e-ca63-4dc6-b0b9-831b0250aa89" SourceId="1" SourceUrl="http://192.168.3.2:8020/FileService.svc?xsd=xsd2" />
+    <MetadataFile FileName="FileService.disco" MetadataType="Disco" ID="ce82c83d-a0a6-4ea6-a23b-024dd76075b5" SourceId="1" SourceUrl="http://192.168.3.2:8020/FileService.svc?disco" />
+    <MetadataFile FileName="FileService2.xsd" MetadataType="Schema" ID="62ae3cef-162d-48c6-af88-160f628f84b8" SourceId="1" SourceUrl="http://192.168.3.2:8020/FileService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

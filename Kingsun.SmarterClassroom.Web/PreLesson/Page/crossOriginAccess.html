@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>跨域执行iframe页面中回传的方法</title>
+	</head>
+	<body onselectstart="return false;">
+		<script type="text/javascript">
+	 		var curUrl=window.location.href;
+	 		var para=request("par");
+	 		//参数0:窗体框架最大化方法
+	 		if(para==0){
+	 			parent.parent.openMax(); // 执行父窗体的最大化函数或方法，需要存在fMain()函数 	
+	 			//alert("参数："+para);
+	 		}
+	 		else if(para==1){//参数1:窗体框架最小化方法
+	 			parent.parent.openMin(); // 执行父窗体的最小化函数或方法，需要存在fMain()函数 	
+	 			//alert("参数："+para);
+	 		}	
+	 		else if (para == 2) { //参数2:窗体框架录制声音的方法
+	 		    var recordTimes = request("times");
+	 			parent.parent.startRecord(recordTimes); // 执行父窗体的录音函数或方法，传入时间长度（毫秒）
+	 			//alert("开始录音：参数："+para);
+	 		}	
+	 		else if(para==3){ //参数3:窗体框架获取回放录音文件
+	 			parent.parent.getSoundPath(); // 执行父窗体的函数或方法，需要存在fMain()函数
+	 			//alert("获取录音文件：参数："+para);
+	 		}
+	 		else if (para == 4) { //参数4:config.json回传值 
+	 		    var type = request("data");
+	 		    parent.parent.getConfigData(type);
+	 		    //alert("得到json文件：类型为："+type);
+	 		}
+	 		else if (para == 5) { //强制结束录音	 		    
+	 		    parent.parent.exitRecord();	 		    
+	 		}
+	 		else if (para == 6) { //录制完成后调用结束录音函数	 		    
+	 		    parent.parent.endRecord();
+	 		}
+	 		else if (para == 7) { //检测软硬件环境，是否加载了EXE壳，麦克风是否准备好了	    
+	 		    parent.parent.checkState();
+	 		}
+			else{ //其它	 			
+	 			//alert("参数："+para);
+	 		}	
+			/*--获取网页传递的参数：
+			 如获取Default.aspx?ID=123这个URL中ID的值时，调用方法：request("ID")
+			 --*/
+			function request(paras)
+			{
+			    var url = location.href;
+			    var paraString = url.substring(url.indexOf("?")+1,url.length).split("&");
+			    var paraObj = {}
+			    for (i=0; j=paraString[i]; i++){
+			        paraObj[j.substring(0,j.indexOf("=")).toLowerCase()] = j.substring(j.indexOf("=")+1,j.length);
+			    }
+			    var returnValue = paraObj[paras.toLowerCase()];
+			    if(typeof(returnValue)=="undefined"){
+			        return "";
+			    }else{
+			        return returnValue;
+			    }
+			}		
+		</script>
+	</body>
+</html>
